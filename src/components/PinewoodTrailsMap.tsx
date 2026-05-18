@@ -11,7 +11,7 @@ export default function PinewoodTrailsMap() {
     <div className="min-h-screen bg-cream">
       <SiteHeader />
       <PageHero
-        eyebrow="Find Us"
+        crumb="Find Us"
         title="Pinewood Trails on the Map"
         subtitle="Tucked into the pines of Magnolia, Texas — easy to reach, hard to leave."
       />
