@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SitesRouteImport } from './routes/sites'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as MapRouteImport } from './routes/map'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as BookRouteImport } from './routes/book'
 import { Route as AmenitiesRouteImport } from './routes/amenities'
@@ -25,6 +26,11 @@ const SitesRoute = SitesRouteImport.update({
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MapRoute = MapRouteImport.update({
+  id: '/map',
+  path: '/map',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
@@ -59,6 +65,7 @@ export interface FileRoutesByFullPath {
   '/amenities': typeof AmenitiesRoute
   '/book': typeof BookRoute
   '/contact': typeof ContactRoute
+  '/map': typeof MapRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/sites': typeof SitesRoute
 }
@@ -68,6 +75,7 @@ export interface FileRoutesByTo {
   '/amenities': typeof AmenitiesRoute
   '/book': typeof BookRoute
   '/contact': typeof ContactRoute
+  '/map': typeof MapRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/sites': typeof SitesRoute
 }
@@ -78,6 +86,7 @@ export interface FileRoutesById {
   '/amenities': typeof AmenitiesRoute
   '/book': typeof BookRoute
   '/contact': typeof ContactRoute
+  '/map': typeof MapRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/sites': typeof SitesRoute
 }
@@ -89,6 +98,7 @@ export interface FileRouteTypes {
     | '/amenities'
     | '/book'
     | '/contact'
+    | '/map'
     | '/sitemap.xml'
     | '/sites'
   fileRoutesByTo: FileRoutesByTo
@@ -98,6 +108,7 @@ export interface FileRouteTypes {
     | '/amenities'
     | '/book'
     | '/contact'
+    | '/map'
     | '/sitemap.xml'
     | '/sites'
   id:
@@ -107,6 +118,7 @@ export interface FileRouteTypes {
     | '/amenities'
     | '/book'
     | '/contact'
+    | '/map'
     | '/sitemap.xml'
     | '/sites'
   fileRoutesById: FileRoutesById
@@ -117,6 +129,7 @@ export interface RootRouteChildren {
   AmenitiesRoute: typeof AmenitiesRoute
   BookRoute: typeof BookRoute
   ContactRoute: typeof ContactRoute
+  MapRoute: typeof MapRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   SitesRoute: typeof SitesRoute
 }
@@ -135,6 +148,13 @@ declare module '@tanstack/react-router' {
       path: '/sitemap.xml'
       fullPath: '/sitemap.xml'
       preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/map': {
+      id: '/map'
+      path: '/map'
+      fullPath: '/map'
+      preLoaderRoute: typeof MapRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -181,9 +201,20 @@ const rootRouteChildren: RootRouteChildren = {
   AmenitiesRoute: AmenitiesRoute,
   BookRoute: BookRoute,
   ContactRoute: ContactRoute,
+  MapRoute: MapRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   SitesRoute: SitesRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
