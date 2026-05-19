@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Home } from "lucide-react";
-import welcomeSign from "@/assets/welcome-sign.jpg";
+import heroBg from "@/assets/page-hero-pines.jpg";
 
 export function PageHero({
   title,
@@ -13,7 +13,7 @@ export function PageHero({
 }) {
   return (
     <section className="relative h-[260px] md:h-[320px] overflow-hidden">
-      <img src={welcomeSign} alt="" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
+      <img src={heroBg} alt="" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
       <div className="absolute inset-0 bg-primary-deep/75" />
       <div className="relative mx-auto flex h-full max-w-[1400px] flex-col justify-center px-6 md:px-10">
         <nav className="mb-4 flex items-center gap-2 text-sm text-cream/80">
