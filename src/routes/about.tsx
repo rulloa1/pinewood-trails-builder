@@ -5,6 +5,10 @@ import { PageHero } from "@/components/PageHero";
 import { SectionTitle } from "@/components/SectionTitle";
 import { Trees, Plug, User, ShowerHead, PawPrint, Leaf, Star } from "lucide-react";
 import pineRoad from "@/assets/pine-road.jpg";
+import teamEloise from "@/assets/team-eloise.jpg";
+import teamVictor from "@/assets/team-victor.jpg";
+import teamCuder from "@/assets/team-cuder.jpg";
+import teamJan from "@/assets/team-jan.jpg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -26,10 +30,10 @@ const special = [
 ];
 
 const team = [
-  { name: "Eloise", role: "Co-Owner" },
-  { name: "Victor", role: "Co-Owner" },
-  { name: "Cuder", role: "Park Staff" },
-  { name: "Jan", role: "Park Staff" },
+  { name: "Eloise", role: "Co-Owner", img: teamEloise },
+  { name: "Victor", role: "Co-Owner", img: teamVictor },
+  { name: "Cuder", role: "Park Staff", img: teamCuder },
+  { name: "Jan", role: "Park Staff", img: teamJan },
 ];
 
 function AboutPage() {
@@ -70,17 +74,20 @@ function AboutPage() {
       <section className="bg-card border-y border-border">
         <div className="mx-auto max-w-[1400px] grid gap-10 px-6 py-14 md:px-10 lg:grid-cols-2">
           <div>
-            <SectionTitle>MEET THE TEAM</SectionTitle>
-            <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
+            <SectionTitle>OUR PEOPLE</SectionTitle>
+            <h2 className="mt-4 text-center font-display text-4xl md:text-5xl font-bold text-foreground">Meet the Team</h2>
+            <p className="mt-3 text-center text-muted-foreground">The folks who make Pinewood Trails feel like home.</p>
+            <div className="mt-10 grid grid-cols-2 gap-6 sm:grid-cols-4">
               {team.map((t) => (
                 <div key={t.name} className="text-center">
-                  <div className="mx-auto h-24 w-24 rounded-md bg-primary/15 ring-2 ring-primary/30" />
-                  <div className="mt-2 font-display text-foreground">{t.name}</div>
-                  <div className="text-xs text-muted-foreground">{t.role}</div>
+                  <div className="mx-auto h-32 w-32 sm:h-36 sm:w-36 overflow-hidden rounded-full ring-4 ring-primary">
+                    <img src={t.img} alt={t.name} className="h-full w-full object-cover" loading="lazy" width={512} height={512} />
+                  </div>
+                  <div className="mt-4 font-display text-lg font-bold text-foreground">{t.name}</div>
+                  <div className="mt-1 text-xs font-semibold uppercase tracking-wider text-primary">{t.role}</div>
                 </div>
               ))}
             </div>
-            <p className="mt-4 text-center text-sm text-muted-foreground">Our team is here to make your stay comfortable and memorable!</p>
           </div>
 
           <div>
