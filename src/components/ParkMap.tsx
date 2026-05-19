@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import "leaflet/dist/leaflet.css";
 import sites from "@/data/park-sites.json";
 
 export default function ParkMap() {
@@ -9,7 +10,6 @@ export default function ParkMap() {
     let cancelled = false;
     (async () => {
       const L = (await import("leaflet")).default;
-      await import("leaflet/dist/leaflet.css");
       if (cancelled || !containerRef.current || mapRef.current) return;
 
       const lats = sites.map((s) => s.lat);
