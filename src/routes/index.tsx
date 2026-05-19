@@ -136,9 +136,14 @@ function HomePage() {
               <li>• All guests must register in office w/ ID</li>
               <li>• Ask about $200 move in — We have RV rentals</li>
               <li>• No loud music • No loud vehicles</li>
-              <li>• No more than 2 adults per RV</li>
-              <li>• No more than 2 vehicles per RV lot</li>
-              <li>• No more than 2 dogs per RV</li>
+              <li>• No storage under or around RV's</li>
+              <li>• No outside trash cans at RV's</li>
+              <li>• No more than 2 adults / 2 vehicles / 2 dogs per RV</li>
+              <li>• No refunds on early departures • No sub leases</li>
+              <li>• No fireworks • No gun fire in park</li>
+              <li>• No dogs unattended outside</li>
+              <li>• Quiet time 8PM – 8AM • Laundry room open 24 hrs</li>
+              <li>• Speed limit 10 MPH</li>
             </ul>
             <Link to="/contact" className="mt-3 inline-block text-sm underline-offset-4 hover:underline">See more rules at check-in.</Link>
           </div>
