@@ -94,13 +94,19 @@ function ContactPage() {
             <div className="text-center font-display tracking-[0.2em]">🌲 PARK RULES REMINDER 🌲</div>
             <ul className="mt-3 grid grid-cols-1 gap-1 text-xs sm:grid-cols-2">
               <li>✓ All guests register w/ ID</li>
-              <li>✓ No loud music</li>
+              <li>✓ No loud music / vehicles</li>
               <li>✓ Max 2 adults per RV</li>
-              <li>✓ No loud vehicles</li>
               <li>✓ Max 2 vehicles per RV lot</li>
-              <li>✓ No outside trash cans</li>
               <li>✓ Max 2 dogs per RV</li>
+              <li>✓ No dogs unattended outside</li>
+              <li>✓ No storage under/around RV's</li>
+              <li>✓ No outside trash cans</li>
+              <li>✓ No fireworks or gun fire</li>
+              <li>✓ No sub leases</li>
+              <li>✓ No refunds on early departures</li>
               <li>✓ Quiet time 8PM – 8AM</li>
+              <li>✓ Laundry room open 24 hrs</li>
+              <li>✓ Speed limit 10 MPH</li>
             </ul>
             <div className="mt-3 text-center font-script text-base">Thank you for helping us keep our park beautiful!</div>
           </div>
