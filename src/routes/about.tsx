@@ -26,10 +26,10 @@ const special = [
 ];
 
 const team = [
-  { name: "Grounds", role: "Park Manager" },
-  { name: "Sarah Johnson", role: "Office Manager" },
-  { name: "Mike Thompson", role: "Maintenance" },
-  { name: "Lisa Rodriguez", role: "Guest Services" },
+  { name: "Eloise", role: "Co-Owner" },
+  { name: "Victor", role: "Co-Owner" },
+  { name: "Cuder", role: "Park Staff" },
+  { name: "Jan", role: "Park Staff" },
 ];
 
 function AboutPage() {
