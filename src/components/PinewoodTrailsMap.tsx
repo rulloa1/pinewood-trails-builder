@@ -2,9 +2,13 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { PageHero } from "@/components/PageHero";
 import { MapPin, Phone, Navigation } from "lucide-react";
+import { lazy, Suspense } from "react";
+import sites from "@/data/park-sites.json";
+
+const ParkMap = lazy(() => import("@/components/ParkMap"));
 
 const ADDRESS = "Magnolia, TX 77354";
-const MAP_QUERY = encodeURIComponent("Magnolia, Texas");
+const MAP_QUERY = encodeURIComponent("Pinewood Trails RV Park, Magnolia, TX");
 
 export default function PinewoodTrailsMap() {
   return (
@@ -13,19 +17,15 @@ export default function PinewoodTrailsMap() {
       <PageHero
         crumb="Find Us"
         title="Pinewood Trails on the Map"
-        subtitle="Tucked into the pines of Magnolia, Texas — easy to reach, hard to leave."
+        subtitle={`Explore all ${sites.length} sites — tucked into the pines of Magnolia, Texas.`}
       />
 
       <section className="mx-auto max-w-[1400px] px-6 py-12 md:px-10">
         <div className="grid gap-8 lg:grid-cols-[1fr_360px]">
-          <div className="overflow-hidden rounded-lg border border-border shadow-md">
-            <iframe
-              title="Pinewood Trails RV Park location"
-              src={`https://www.google.com/maps?q=${MAP_QUERY}&output=embed`}
-              className="h-[520px] w-full"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
+          <div className="overflow-hidden rounded-lg border border-border shadow-md bg-muted">
+            <Suspense fallback={<div className="flex h-[560px] items-center justify-center text-muted-foreground">Loading map…</div>}>
+              <ParkMap />
+            </Suspense>
           </div>
 
           <aside className="flex flex-col gap-4">
