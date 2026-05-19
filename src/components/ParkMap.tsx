@@ -58,7 +58,7 @@ export default function ParkMap() {
         .pt-site-marker { background: transparent; border: none; }
         .pt-pin {
           width: 28px; height: 28px; border-radius: 9999px;
-          background: hsl(var(--primary, 18 65% 45%));
+          background: #b8533a;
           color: #fff; display: flex; align-items: center; justify-content: center;
           font: 600 11px/1 ui-sans-serif, system-ui, sans-serif;
           box-shadow: 0 1px 3px rgba(0,0,0,.5), 0 0 0 2px #fff;
