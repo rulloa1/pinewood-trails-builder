@@ -26,7 +26,7 @@ const special = [
 ];
 
 const team = [
-  { name: "James Martin", role: "Park Manager" },
+  { name: "Grounds", role: "Park Manager" },
   { name: "Sarah Johnson", role: "Office Manager" },
   { name: "Mike Thompson", role: "Maintenance" },
   { name: "Lisa Rodriguez", role: "Guest Services" },
