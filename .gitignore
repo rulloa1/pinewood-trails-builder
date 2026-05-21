@@ -20,6 +20,16 @@ dist-ssr
 .wrangler/
 .dev.vars
 
+# Generated lockfiles from other package managers
+package-lock.json
+yarn.lock
+
+# Browser automation artifacts
+.playwright-mcp/
+
+# Claude Code local settings
+.claude/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
