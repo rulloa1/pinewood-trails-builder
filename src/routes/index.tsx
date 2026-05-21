@@ -146,55 +146,6 @@ function HomePage() {
         </div>
       </section>
 
-      {/* WELCOME / AMENITIES STRIP + MAP */}
-      <section className="mx-auto max-w-[1400px] px-6 py-14 md:px-10 grid gap-10 lg:grid-cols-2">
-        <div>
-          <SectionTitle className="!justify-start">WELCOME TO PINEWOOD TRAILS RV PARK</SectionTitle>
-          <div className="mt-8 grid grid-cols-3 gap-4 sm:grid-cols-6">
-            {amenities.map((a) => (
-              <div key={a.label} className="flex flex-col items-center gap-2 rounded-lg border border-border bg-card p-4 text-center shadow-sm">
-                <a.icon className="h-8 w-8 text-primary" />
-                <span className="whitespace-pre-line text-sm font-medium text-primary">{a.label}</span>
-              </div>
-            ))}
-          </div>
-          <div className="mt-8 inline-flex items-center gap-3 rounded-md border border-primary/20 bg-card px-6 py-3">
-            <span>🌲</span>
-            <span className="font-script text-2xl text-primary">Where folks love to live!</span>
-            <span>🌲</span>
-          </div>
-        </div>
-
-        <div>
-          <SectionTitle className="!justify-start">AVAILABLE SITES</SectionTitle>
-          <div className="mt-6 grid gap-4 md:grid-cols-[1fr_280px]">
-            <div className="relative overflow-hidden rounded-lg ring-1 ring-border">
-              <img src={mapImg} alt="Park map" className="aspect-[4/3] w-full object-cover" loading="lazy" />
-              <Link to="/sites" className="absolute bottom-3 right-3 rounded-md bg-cream/95 px-3 py-1.5 text-sm font-medium text-primary shadow">View All Sites</Link>
-            </div>
-            <div className="flex flex-col gap-3">
-              {sampleSites.map((s) => (
-                <div key={s.num} className="flex gap-3 rounded-lg border border-border bg-card p-2 shadow-sm">
-                  <img src={s.img} alt={`Site ${s.num}`} className="h-20 w-24 rounded object-cover" loading="lazy" />
-                  <div className="flex flex-1 flex-col justify-between py-1 pr-2">
-                    <div>
-                      <div className="flex items-center gap-2">
-                        <span className="rounded bg-primary px-1.5 text-xs font-bold text-primary-foreground">{s.num}</span>
-                        <span className="font-medium text-foreground">Site {s.num}</span>
-                        <Heart className="ml-auto h-4 w-4 text-muted-foreground" />
-                      </div>
-                      <div className="text-xs text-muted-foreground">{s.type} • {s.amp}</div>
-                      <div className="text-sm"><span className="font-bold text-primary">${s.price}</span> <span className="text-xs text-muted-foreground">/night</span></div>
-                    </div>
-                  </div>
-                  <Link to="/book" className="self-center rounded bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground hover:bg-primary-deep">View</Link>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Info strip */}
       <section className="border-y border-border bg-cream">
         <div className="mx-auto grid max-w-[1400px] items-center gap-6 px-6 py-6 md:grid-cols-4 md:px-10">
