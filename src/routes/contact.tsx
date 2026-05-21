@@ -28,7 +28,7 @@ function ContactPage() {
   return (
     <div className="min-h-screen bg-cream">
       <SiteHeader />
-      <PageHero title="Contact Us" crumb="Contact Us" />
+      <PageHero title="Contact Us" subtitle="We're here 7 days a week — give us a call or send a message." crumb="Contact Us" />
 
       <section className="mx-auto max-w-[1400px] grid gap-6 px-6 py-12 md:px-10 lg:grid-cols-[1fr_1.2fr_1fr]">
         {/* Contact info */}

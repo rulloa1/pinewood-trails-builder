@@ -14,7 +14,7 @@ export function PageHero({
   return (
     <section className="relative h-[260px] md:h-[320px] overflow-hidden">
       <img src={heroBg} alt="" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
-      <div className="absolute inset-0 bg-primary-deep/75" />
+      <div className="absolute inset-0 bg-gradient-to-t from-primary-deep/80 via-primary-deep/45 to-primary-deep/20" />
       <div className="relative mx-auto flex h-full max-w-[1400px] flex-col justify-center px-6 md:px-10">
         <nav className="mb-4 flex items-center gap-2 text-sm text-cream/80">
           <Link to="/" className="inline-flex items-center gap-1.5 hover:text-cream"><Home className="h-3.5 w-3.5" /> Home</Link>

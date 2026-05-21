@@ -63,7 +63,7 @@ function SitesPage() {
   return (
     <div className="min-h-screen bg-cream">
       <SiteHeader />
-      <PageHero title="Sites & Rates" subtitle="29 spacious sites tucked beneath the pines." crumb="Sites & Rates" />
+      <PageHero title="Sites & Rates" subtitle="92 spacious sites tucked beneath the pines." crumb="Sites & Rates" />
 
       <section className="mx-auto max-w-[1400px] px-6 py-10 md:px-10">
         <BookingWidget variant="compact" />
@@ -71,7 +71,7 @@ function SitesPage() {
 
       <section className="mx-auto max-w-[1400px] px-6 pb-16 md:px-10">
         <SectionTitle>AVAILABLE SITES</SectionTitle>
-        <p className="mt-3 text-center text-muted-foreground">29 sites available</p>
+        <p className="mt-3 text-center text-muted-foreground">92 sites across 7 rows — featured selection shown below</p>
         <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {sites.map((s) => (
             <button

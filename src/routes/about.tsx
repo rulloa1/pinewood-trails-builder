@@ -47,9 +47,9 @@ function AboutPage() {
           <SectionTitle className="!justify-start">OUR STORY</SectionTitle>
           <div className="mt-2 font-script text-3xl text-primary">Where folks love to live!</div>
           <div className="mt-5 space-y-4 text-muted-foreground">
-            <p>Pinewood Trails RV Park has been a beloved destination for travelers and long-term guests alike. Nestled among towering pine trees, we offer a peaceful escape with the comforts of home.</p>
-            <p>Our family-owned park is built on the values of hospitality, community, and care. We're committed to providing a clean, safe, and welcoming environment where guests can relax, recharge, and feel right at home.</p>
-            <p>Whether you're here for a weekend or a season, we're glad you're part of the Pinewood Trails family.</p>
+            <p>Pinewood Trails RV Park sits on a quiet stretch of Pinewood Trails Drive in Magnolia, Texas — just minutes from the shops of Tomball and easy driving distance from the Sam Houston National Forest. It's the kind of place that feels far from the city without being far from anything you need.</p>
+            <p>We're a family-owned park, and it shows. Every site has full hookups, the facilities are kept clean, and our staff is here seven days a week to make sure your stay goes smoothly. We've welcomed everyone from full-time RVers putting down roots to weekend travelers passing through on their way west.</p>
+            <p>Whether you're staying a night, a month, or longer — you're part of the Pinewood Trails family while you're here. We're glad to have you.</p>
           </div>
           <Link to="/book" className="mt-6 inline-flex rounded-md bg-primary px-6 py-3 font-display text-primary-foreground hover:bg-primary-deep">Book Your Stay</Link>
         </div>

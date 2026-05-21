@@ -55,7 +55,7 @@ function HomePage() {
                 <span className="font-script text-6xl md:text-8xl font-medium">Stay Awhile.</span>
               </h1>
               <p className="mt-5 max-w-md text-lg text-cream/95 drop-shadow">
-                Spacious sites, modern amenities, and the peace of the pines—your home away from home.
+                92 sites tucked beneath the East Texas pines. Full hookups, 50A/30A service, and friendly staff ready to welcome you.
               </p>
               <Link to="/amenities" className="mt-6 inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 font-display text-primary-foreground shadow-lg hover:bg-primary-deep">
                 View Amenities 🌲
@@ -117,9 +117,9 @@ function HomePage() {
       {/* Info strip */}
       <section className="border-y border-border bg-cream">
         <div className="mx-auto grid max-w-[1400px] items-center gap-6 px-6 py-6 md:grid-cols-4 md:px-10">
-          <InfoItem icon={<Phone />} title="Call Us Today!" text="832-521-3345 | 832-671-5999" />
-          <InfoItem icon={<Clock />} title="Office Hours" text="8AM – 5PM, 7 Days a Week" />
-          <InfoItem icon={<Calendar />} title="Ready to Reserve?" text="Book online or give us a call!" />
+          <InfoItem icon={<Phone />} title="Call Us Today!" text="832-521-3345  ·  832-671-5999" />
+          <InfoItem icon={<Clock />} title="Office Hours" text="Monday – Sunday · 8AM – 5PM" />
+          <InfoItem icon={<Calendar />} title="Ready to Reserve?" text="Book online or call — we're happy to help." />
           <Link to="/book" className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 font-display text-primary-foreground hover:bg-primary-deep">
             Book Now
           </Link>
@@ -154,7 +154,7 @@ function HomePage() {
           </div>
           <div>
             <div className="flex items-center gap-2 font-display text-xl"><MapPin className="h-5 w-5" /> Magnolia, Texas</div>
-            <p className="mt-2 text-sm opacity-90">Peaceful pine setting just minutes from shopping, dining & local attractions.</p>
+            <p className="mt-2 text-sm opacity-90">19651 Pinewood Trails Dr., Magnolia, TX 77355 — minutes from Tomball shopping, dining, and easy access to the Sam Houston National Forest.</p>
             <img src={welcomeSign} alt="Welcome sign" className="mt-4 h-32 w-full rounded object-cover" loading="lazy" />
           </div>
         </div>
