@@ -14,6 +14,7 @@ export default function ParkMap() {
   const LRef = useRef<unknown>(null);
 
   const [active, setActive] = useState<Set<number>>(() => new Set(ROWS));
+  const [ready, setReady] = useState(false);
 
   const counts = useMemo(() => {
     const c: Record<number, number> = {};
@@ -44,6 +45,7 @@ export default function ParkMap() {
       ).addTo(map);
 
       layerRef.current = L.layerGroup().addTo(map);
+      setReady(true);
     })();
 
     return () => {
@@ -52,6 +54,7 @@ export default function ParkMap() {
       if (m && typeof m.remove === "function") m.remove();
       mapRef.current = null;
       layerRef.current = null;
+      setReady(false);
     };
   }, []);
 
@@ -75,7 +78,7 @@ export default function ParkMap() {
         const m = L.marker([s.lat, s.lon], { icon }).bindPopup(`<strong>Site ${label}</strong>`);
         layer.addLayer(m);
       });
-  }, [active]);
+  }, [active, ready]);
 
   const toggle = (row: number) => {
     setActive((prev) => {
