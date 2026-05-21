@@ -147,47 +147,69 @@ function HomePage() {
       </section>
 
       {/* Info strip */}
-      <section className="border-y border-border bg-cream">
-        <div className="mx-auto grid max-w-[1400px] items-center gap-6 px-6 py-6 md:grid-cols-4 md:px-10">
+      <section className="border-y border-accent/40 bg-gradient-to-r from-cream via-accent/10 to-cream">
+        <div className="mx-auto grid max-w-[1400px] items-center gap-6 px-6 py-8 md:grid-cols-4 md:px-10">
           <InfoItem icon={<Phone />} title="Call Us Today!" text="832-521-3345  ·  832-671-5999" />
           <InfoItem icon={<Clock />} title="Office Hours" text="Monday – Sunday · 8AM – 5PM" />
           <InfoItem icon={<Calendar />} title="Ready to Reserve?" text="Book online or call — we're happy to help." />
-          <Link to="/book" className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 font-display text-primary-foreground hover:bg-primary-deep">
+          <Link to="/book" className="inline-flex items-center justify-center rounded-xl bg-accent px-6 py-3 font-display font-semibold text-accent-foreground shadow-md transition-all duration-300 hover:bg-primary-deep hover:text-cream hover:-translate-y-0.5 hover:shadow-xl">
             Book Now
           </Link>
         </div>
       </section>
 
       {/* Park rules / location */}
-      <section className="bg-primary-deep text-cream">
-        <div className="mx-auto grid max-w-[1400px] gap-8 px-6 py-12 md:grid-cols-3 md:px-10">
-          <div>
-            <div className="font-display tracking-[0.3em] text-sm mb-3">PARK RULES</div>
-            <ul className="space-y-1 text-sm opacity-90">
-              <li>• No trespassing — Tenants & invited guests only</li>
-              <li>• All guests must register in office w/ ID</li>
-              <li>• Ask about $200 move in — We have RV rentals</li>
-              <li>• No loud music • No loud vehicles</li>
-              <li>• No storage under or around RV's</li>
-              <li>• No outside trash cans at RV's</li>
-              <li>• No more than 2 adults / 2 vehicles / 2 dogs per RV</li>
-              <li>• No refunds on early departures • No sub leases</li>
-              <li>• No fireworks • No gun fire in park</li>
-              <li>• No dogs unattended outside</li>
-              <li>• Quiet time 8PM – 8AM • Laundry room open 24 hrs</li>
-              <li>• Speed limit 10 MPH</li>
-            </ul>
-            <Link to="/contact" className="mt-3 inline-block text-sm underline-offset-4 hover:underline">See more rules at check-in.</Link>
-          </div>
-          <div className="text-center">
-            <div className="font-display text-2xl tracking-wide">PINEWOOD TRAILS</div>
-            <div className="border-y border-cream/30 my-2 text-center text-xs tracking-[0.4em] py-0.5 mx-auto max-w-[160px]">RV PARK</div>
-            <div className="font-script text-xl">Where folks love to live!</div>
-          </div>
-          <div>
-            <div className="flex items-center gap-2 font-display text-xl"><MapPin className="h-5 w-5" /> Magnolia, Texas</div>
-            <p className="mt-2 text-sm opacity-90">19651 Pinewood Trails Dr., Magnolia, TX 77355 — minutes from Tomball shopping, dining, and easy access to the Sam Houston National Forest.</p>
-            <img src={welcomeSign} alt="Welcome sign" className="mt-4 h-32 w-full rounded object-cover" loading="lazy" />
+      <section className="bg-cream py-20 reveal">
+        <div className="mx-auto max-w-[1400px] px-6 md:px-10">
+          <SectionTitle>Park Rules &amp; Location</SectionTitle>
+          <div className="mt-12 grid gap-8 md:grid-cols-3">
+            {/* Park rules card — parchment */}
+            <div className="rounded-2xl border-2 border-accent/30 bg-gradient-to-b from-cream to-accent/10 p-7 shadow-lg">
+              <div className="section-heading text-sm text-primary-deep mb-4 flex items-center gap-2">
+                <TreePine className="h-4 w-4 text-accent" /> Park Rules
+              </div>
+              <ul className="space-y-2 text-sm text-foreground">
+                {[
+                  "No trespassing — Tenants & invited guests only",
+                  "All guests must register in office w/ ID",
+                  "Ask about $200 move in — We have RV rentals",
+                  "No loud music • No loud vehicles",
+                  "No storage under or around RV's",
+                  "No outside trash cans at RV's",
+                  "No more than 2 adults / 2 vehicles / 2 dogs per RV",
+                  "No refunds on early departures • No sub leases",
+                  "No fireworks • No gun fire in park",
+                  "No dogs unattended outside",
+                  "Quiet time 8PM – 8AM • Laundry room open 24 hrs",
+                  "Speed limit 10 MPH",
+                ].map((rule) => (
+                  <li key={rule} className="flex items-start gap-2">
+                    <TreePine className="mt-0.5 h-3.5 w-3.5 flex-shrink-0 text-accent" />
+                    <span>{rule}</span>
+                  </li>
+                ))}
+              </ul>
+              <Link to="/contact" className="mt-4 inline-block text-sm font-semibold text-primary-deep underline-offset-4 hover:underline hover:text-accent transition">
+                See more rules at check-in →
+              </Link>
+            </div>
+
+            {/* Brand mark center */}
+            <div className="flex flex-col items-center justify-center rounded-2xl border-2 border-accent/30 bg-primary-deep p-7 text-cream shadow-lg">
+              <TreePine className="h-12 w-12 text-accent" />
+              <div className="mt-3 font-display text-2xl font-bold tracking-wide">PINEWOOD TRAILS</div>
+              <div className="border-y border-accent/40 my-2 text-center text-xs tracking-[0.4em] py-0.5 px-4 text-accent">RV PARK</div>
+              <div className="font-script text-2xl mt-1">Where folks love to live!</div>
+            </div>
+
+            {/* Location */}
+            <div className="rounded-2xl border-2 border-accent/30 bg-gradient-to-b from-cream to-accent/10 p-7 shadow-lg">
+              <div className="section-heading text-sm text-primary-deep mb-4 flex items-center gap-2">
+                <MapPin className="h-4 w-4 text-accent" /> Magnolia, Texas
+              </div>
+              <p className="text-sm text-foreground">19651 Pinewood Trails Dr., Magnolia, TX 77355 — minutes from Tomball shopping, dining, and easy access to the Sam Houston National Forest.</p>
+              <img src={welcomeSign} alt="Welcome sign" className="mt-4 h-40 w-full rounded-xl object-cover shadow-md" loading="lazy" />
+            </div>
           </div>
         </div>
       </section>
