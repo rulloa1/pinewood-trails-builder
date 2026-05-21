@@ -55,7 +55,7 @@ function HomePage() {
             <img src={heroImg} alt="Pinewood Trails RV Park" className="absolute inset-0 h-full w-full object-cover" />
           </video>
           {/* Base wash */}
-          <div className="absolute inset-1 bg-gradient-to-r from-primary-deep/60 via-primary-deep/20 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary-deep/60 via-primary-deep/20 to-transparent" />
           {/* Localized dark gradient behind text for readability */}
           <div className="absolute inset-y-0 right-0 w-full md:w-[55%] bg-gradient-to-l from-primary-deep/90 via-primary-deep/65 to-transparent" />
           <div className="relative mx-auto grid h-full max-w-[1400px] grid-cols-1 items-center gap-8 px-6 md:grid-cols-2 md:px-10">
