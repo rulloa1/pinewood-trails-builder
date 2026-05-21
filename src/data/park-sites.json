@@ -1,738 +1,100 @@
 [
-  {
-    "id": 701,
-    "name": "#701",
-    "row": 700,
-    "status": "available",
-    "lat": 30.13026602237392,
-    "lon": -95.73240772586512
-  },
-  {
-    "id": 702,
-    "name": "#702",
-    "row": 700,
-    "status": "available",
-    "lat": 30.13024132305449,
-    "lon": -95.73239765917151
-  },
-  {
-    "id": 703,
-    "name": "#703",
-    "row": 700,
-    "status": "available",
-    "lat": 30.13015059551235,
-    "lon": -95.73240474325027
-  },
-  {
-    "id": 704,
-    "name": "#704",
-    "row": 700,
-    "status": "available",
-    "lat": 30.13007774463884,
-    "lon": -95.73241589602753
-  },
-  {
-    "id": 705,
-    "name": "#705",
-    "row": 700,
-    "status": "available",
-    "lat": 30.12983867474475,
-    "lon": -95.73233898730157
-  },
-  {
-    "id": 706,
-    "name": "#706",
-    "row": 700,
-    "status": "available",
-    "lat": 30.12972231595847,
-    "lon": -95.7323597930225
-  },
-  {
-    "id": 707,
-    "name": "#707",
-    "row": 700,
-    "status": "available",
-    "lat": 30.12963706693965,
-    "lon": -95.73235512307055
-  },
-  {
-    "id": 708,
-    "name": "#708",
-    "row": 700,
-    "status": "available",
-    "lat": 30.1294771644178,
-    "lon": -95.73233117163404
-  },
-  {
-    "id": 709,
-    "name": "#709",
-    "row": 700,
-    "status": "available",
-    "lat": 30.12932454605507,
-    "lon": -95.73239892209656
-  },
-  {
-    "id": 710,
-    "name": "#710",
-    "row": 700,
-    "status": "available",
-    "lat": 30.12921465456173,
-    "lon": -95.73238970017626
-  },
-  {
-    "id": 711,
-    "name": "#711",
-    "row": 700,
-    "status": "available",
-    "lat": 30.12903626155807,
-    "lon": -95.73238318083668
-  },
-  {
-    "id": 601,
-    "name": "#601",
-    "row": 600,
-    "status": "available",
-    "lat": 30.13024740687383,
-    "lon": -95.7320183254144
-  },
-  {
-    "id": 602,
-    "name": "#602",
-    "row": 600,
-    "status": "available",
-    "lat": 30.13009309602644,
-    "lon": -95.73195909985115
-  },
-  {
-    "id": 603,
-    "name": "#603",
-    "row": 600,
-    "status": "available",
-    "lat": 30.13000973351314,
-    "lon": -95.7319558028544
-  },
-  {
-    "id": 604,
-    "name": "#604",
-    "row": 600,
-    "status": "available",
-    "lat": 30.12990949336822,
-    "lon": -95.73197012864374
-  },
-  {
-    "id": 605,
-    "name": "#605",
-    "row": 600,
-    "status": "available",
-    "lat": 30.12978992853213,
-    "lon": -95.73194716536806
-  },
-  {
-    "id": 606,
-    "name": "#606",
-    "row": 600,
-    "status": "available",
-    "lat": 30.12945141134506,
-    "lon": -95.73192321935785
-  },
-  {
-    "id": 607,
-    "name": "#607",
-    "row": 600,
-    "status": "available",
-    "lat": 30.12930311889136,
-    "lon": -95.73191513869266
-  },
-  {
-    "id": 608,
-    "name": "#608",
-    "row": 600,
-    "status": "available",
-    "lat": 30.12919692733326,
-    "lon": -95.73195149488008
-  },
-  {
-    "id": 609,
-    "name": "#609",
-    "row": 600,
-    "status": "available",
-    "lat": 30.12910062938889,
-    "lon": -95.73195657329416
-  },
-  {
-    "id": 501,
-    "name": "#501",
-    "row": 500,
-    "status": "available",
-    "lat": 30.13087083189305,
-    "lon": -95.7315288602564
-  },
-  {
-    "id": 502,
-    "name": "#502",
-    "row": 500,
-    "status": "available",
-    "lat": 30.13078489337427,
-    "lon": -95.73157449631002
-  },
-  {
-    "id": 503,
-    "name": "#503",
-    "row": 500,
-    "status": "available",
-    "lat": 30.13066225836889,
-    "lon": -95.73163339947475
-  },
-  {
-    "id": 504,
-    "name": "#504",
-    "row": 500,
-    "status": "available",
-    "lat": 30.13056295696589,
-    "lon": -95.73168222920758
-  },
-  {
-    "id": 505,
-    "name": "#505",
-    "row": 500,
-    "status": "available",
-    "lat": 30.13048053017339,
-    "lon": -95.73167903811932
-  },
-  {
-    "id": 506,
-    "name": "#506",
-    "row": 500,
-    "status": "available",
-    "lat": 30.13035101981582,
-    "lon": -95.73169375186893
-  },
-  {
-    "id": 507,
-    "name": "#507",
-    "row": 500,
-    "status": "available",
-    "lat": 30.1302474009782,
-    "lon": -95.73173827832557
-  },
-  {
-    "id": 508,
-    "name": "#508",
-    "row": 500,
-    "status": "available",
-    "lat": 30.13019090355654,
-    "lon": -95.73171432345605
-  },
-  {
-    "id": 509,
-    "name": "#509",
-    "row": 500,
-    "status": "available",
-    "lat": 30.13010788421651,
-    "lon": -95.73168855379583
-  },
-  {
-    "id": 510,
-    "name": "#510",
-    "row": 500,
-    "status": "available",
-    "lat": 30.1299667851914,
-    "lon": -95.7317623594068
-  },
-  {
-    "id": 511,
-    "name": "#511",
-    "row": 500,
-    "status": "available",
-    "lat": 30.12994478909232,
-    "lon": -95.73178086044956
-  },
-  {
-    "id": 512,
-    "name": "#512",
-    "row": 500,
-    "status": "available",
-    "lat": 30.12985682850663,
-    "lon": -95.73176347622632
-  },
-  {
-    "id": 513,
-    "name": "#513",
-    "row": 500,
-    "status": "available",
-    "lat": 30.12978647417184,
-    "lon": -95.73174099270531
-  },
-  {
-    "id": 514,
-    "name": "#514",
-    "row": 500,
-    "status": "available",
-    "lat": 30.12969966554273,
-    "lon": -95.73173763121503
-  },
-  {
-    "id": 515,
-    "name": "#515",
-    "row": 500,
-    "status": "available",
-    "lat": 30.12960043933692,
-    "lon": -95.73171677434297
-  },
-  {
-    "id": 516,
-    "name": "#516",
-    "row": 500,
-    "status": "available",
-    "lat": 30.1294711455165,
-    "lon": -95.73176223459126
-  },
-  {
-    "id": 517,
-    "name": "#517",
-    "row": 500,
-    "status": "available",
-    "lat": 30.12939046775636,
-    "lon": -95.73174295959178
-  },
-  {
-    "id": 518,
-    "name": "#518",
-    "row": 500,
-    "status": "available",
-    "lat": 30.12929885236219,
-    "lon": -95.73174161551293
-  },
-  {
-    "id": 519,
-    "name": "#519",
-    "row": 500,
-    "status": "available",
-    "lat": 30.12920534713714,
-    "lon": -95.73174220084182
-  },
-  {
-    "id": 520,
-    "name": "#520",
-    "row": 500,
-    "status": "available",
-    "lat": 30.12910964741162,
-    "lon": -95.73176070530936
-  },
-  {
-    "id": 521,
-    "name": "#521",
-    "row": 500,
-    "status": "available",
-    "lat": 30.12903806953493,
-    "lon": -95.73173193260656
-  },
-  {
-    "id": 401,
-    "name": "#401",
-    "row": 400,
-    "status": "available",
-    "lat": 30.13083075634947,
-    "lon": -95.7311441993176
-  },
-  {
-    "id": 402,
-    "name": "#402",
-    "row": 400,
-    "status": "available",
-    "lat": 30.13073484303698,
-    "lon": -95.73115257324295
-  },
-  {
-    "id": 403,
-    "name": "#403",
-    "row": 400,
-    "status": "available",
-    "lat": 30.13064893166688,
-    "lon": -95.73112469035483
-  },
-  {
-    "id": 404,
-    "name": "#404",
-    "row": 400,
-    "status": "available",
-    "lat": 30.13056589385062,
-    "lon": -95.7311499556381
-  },
-  {
-    "id": 405,
-    "name": "#405",
-    "row": 400,
-    "status": "available",
-    "lat": 30.13053744522022,
-    "lon": -95.73116981995767
-  },
-  {
-    "id": 406,
-    "name": "#406",
-    "row": 400,
-    "status": "available",
-    "lat": 30.13045299323557,
-    "lon": -95.73114560540195
-  },
-  {
-    "id": 407,
-    "name": "#407",
-    "row": 400,
-    "status": "available",
-    "lat": 30.13039341402754,
-    "lon": -95.73113680380308
-  },
-  {
-    "id": 408,
-    "name": "#408",
-    "row": 400,
-    "status": "available",
-    "lat": 30.13030800886379,
-    "lon": -95.73113971667499
-  },
-  {
-    "id": 409,
-    "name": "#409",
-    "row": 400,
-    "status": "available",
-    "lat": 30.1302159587997,
-    "lon": -95.73113456047348
-  },
-  {
-    "id": 410,
-    "name": "#410",
-    "row": 400,
-    "status": "available",
-    "lat": 30.13011256293919,
-    "lon": -95.73111279380589
-  },
-  {
-    "id": 411,
-    "name": "#411",
-    "row": 400,
-    "status": "available",
-    "lat": 30.1300261068368,
-    "lon": -95.73111258903553
-  },
-  {
-    "id": 412,
-    "name": "#412",
-    "row": 400,
-    "status": "available",
-    "lat": 30.12996975343952,
-    "lon": -95.73112456805644
-  },
-  {
-    "id": 413,
-    "name": "#413",
-    "row": 400,
-    "status": "available",
-    "lat": 30.12989950188347,
-    "lon": -95.73111749052836
-  },
-  {
-    "id": 414,
-    "name": "#414",
-    "row": 400,
-    "status": "available",
-    "lat": 30.12985114585121,
-    "lon": -95.73112323503211
-  },
-  {
-    "id": 415,
-    "name": "#415",
-    "row": 400,
-    "status": "available",
-    "lat": 30.12981559896023,
-    "lon": -95.73110687226846
-  },
-  {
-    "id": 301,
-    "name": "#301",
-    "row": 300,
-    "status": "available",
-    "lat": 30.13086788341704,
-    "lon": -95.73083287092274
-  },
-  {
-    "id": 302,
-    "name": "#302",
-    "row": 300,
-    "status": "available",
-    "lat": 30.13076932698164,
-    "lon": -95.73083058565524
-  },
-  {
-    "id": 303,
-    "name": "#303",
-    "row": 300,
-    "status": "available",
-    "lat": 30.13067747365173,
-    "lon": -95.73084964427832
-  },
-  {
-    "id": 304,
-    "name": "#304",
-    "row": 300,
-    "status": "available",
-    "lat": 30.13058872690455,
-    "lon": -95.73085235564153
-  },
-  {
-    "id": 305,
-    "name": "#305",
-    "row": 300,
-    "status": "available",
-    "lat": 30.13052539852741,
-    "lon": -95.73084861479094
-  },
-  {
-    "id": 306,
-    "name": "#306",
-    "row": 300,
-    "status": "available",
-    "lat": 30.13044705887008,
-    "lon": -95.7308659069602
-  },
-  {
-    "id": 307,
-    "name": "#307",
-    "row": 300,
-    "status": "available",
-    "lat": 30.13034113973926,
-    "lon": -95.73084947677361
-  },
-  {
-    "id": 308,
-    "name": "#308",
-    "row": 300,
-    "status": "available",
-    "lat": 30.13025334324362,
-    "lon": -95.73083849241871
-  },
-  {
-    "id": 309,
-    "name": "#309",
-    "row": 300,
-    "status": "available",
-    "lat": 30.13016996210562,
-    "lon": -95.7308362571752
-  },
-  {
-    "id": 310,
-    "name": "#310",
-    "row": 300,
-    "status": "available",
-    "lat": 30.13008177304215,
-    "lon": -95.73084602874899
-  },
-  {
-    "id": 311,
-    "name": "#311",
-    "row": 300,
-    "status": "available",
-    "lat": 30.13002239590378,
-    "lon": -95.73083156450478
-  },
-  {
-    "id": 312,
-    "name": "#312",
-    "row": 300,
-    "status": "available",
-    "lat": 30.12993413272428,
-    "lon": -95.73082411479673
-  },
-  {
-    "id": 313,
-    "name": "#313",
-    "row": 300,
-    "status": "available",
-    "lat": 30.12985599797149,
-    "lon": -95.73084398002787
-  },
-  {
-    "id": 201,
-    "name": "#201",
-    "row": 200,
-    "status": "available",
-    "lat": 30.13082524985898,
-    "lon": -95.73067513121069
-  },
-  {
-    "id": 202,
-    "name": "#202",
-    "row": 200,
-    "status": "available",
-    "lat": 30.13074310144821,
-    "lon": -95.73067278792176
-  },
-  {
-    "id": 203,
-    "name": "#203",
-    "row": 200,
-    "status": "available",
-    "lat": 30.13066488024651,
-    "lon": -95.73068586998009
-  },
-  {
-    "id": 204,
-    "name": "#204",
-    "row": 200,
-    "status": "available",
-    "lat": 30.1305752099644,
-    "lon": -95.73065654854909
-  },
-  {
-    "id": 205,
-    "name": "#205",
-    "row": 200,
-    "status": "available",
-    "lat": 30.13048769641667,
-    "lon": -95.73064513555731
-  },
-  {
-    "id": 206,
-    "name": "#206",
-    "row": 200,
-    "status": "available",
-    "lat": 30.13038942751754,
-    "lon": -95.73064094678178
-  },
-  {
-    "id": 207,
-    "name": "#207",
-    "row": 200,
-    "status": "available",
-    "lat": 30.1303136988867,
-    "lon": -95.73064724339103
-  },
-  {
-    "id": 208,
-    "name": "#208",
-    "row": 200,
-    "status": "available",
-    "lat": 30.13024396118542,
-    "lon": -95.73064675888348
-  },
-  {
-    "id": 209,
-    "name": "#209",
-    "row": 200,
-    "status": "available",
-    "lat": 30.1301468470722,
-    "lon": -95.7306356875111
-  },
-  {
-    "id": 210,
-    "name": "#210",
-    "row": 200,
-    "status": "available",
-    "lat": 30.13006473220446,
-    "lon": -95.73065432819713
-  },
-  {
-    "id": 211,
-    "name": "#211",
-    "row": 200,
-    "status": "available",
-    "lat": 30.12997242046857,
-    "lon": -95.73065813760613
-  },
-  {
-    "id": 212,
-    "name": "#212",
-    "row": 200,
-    "status": "available",
-    "lat": 30.1298129557603,
-    "lon": -95.7306821202135
-  },
-  {
-    "id": 101,
-    "name": "#101",
-    "row": 100,
-    "status": "available",
-    "lat": 30.13080709363278,
-    "lon": -95.73039283287437
-  },
-  {
-    "id": 102,
-    "name": "#102",
-    "row": 100,
-    "status": "available",
-    "lat": 30.13071853771999,
-    "lon": -95.73041387104888
-  },
-  {
-    "id": 103,
-    "name": "#103",
-    "row": 100,
-    "status": "available",
-    "lat": 30.13063474976362,
-    "lon": -95.73041253471501
-  },
-  {
-    "id": 104,
-    "name": "#104",
-    "row": 100,
-    "status": "available",
-    "lat": 30.13055695272224,
-    "lon": -95.73041234679242
-  },
-  {
-    "id": 105,
-    "name": "#105",
-    "row": 100,
-    "status": "available",
-    "lat": 30.13046209103955,
-    "lon": -95.7304004898364
-  },
-  {
-    "id": 106,
-    "name": "#106",
-    "row": 100,
-    "status": "available",
-    "lat": 30.13037731959998,
-    "lon": -95.73038383978451
-  },
-  {
-    "id": 107,
-    "name": "#107",
-    "row": 100,
-    "status": "available",
-    "lat": 30.1302812273051,
-    "lon": -95.73040031624046
-  },
-  {
-    "id": 108,
-    "name": "#108",
-    "row": 100,
-    "status": "available",
-    "lat": 30.1301982559326,
-    "lon": -95.73038125575971
-  },
-  {
-    "id": 109,
-    "name": "#109",
-    "row": 100,
-    "status": "available",
-    "lat": 30.13012424799874,
-    "lon": -95.73040263563456
-  },
-  {
-    "id": 110,
-    "name": "#110",
-    "row": 100,
-    "status": "available",
-    "lat": 30.13000655284992,
-    "lon": -95.73037598664837
-  },
-  {
-    "id": 111,
-    "name": "#111",
-    "row": 100,
-    "status": "available",
-    "lat": 30.12986342425893,
-    "lon": -95.73035171842677
-  }
+  { "id": 701, "name": "#701", "row": 700, "status": "available", "lat": 30.13026602237392, "lon": -95.73240772586512, "description": "Secluded end site on the 700 row with pine canopy overhead — maximum privacy." },
+  { "id": 702, "name": "#702", "row": 700, "status": "available", "lat": 30.13024132305449, "lon": -95.73239765917151, "description": "Quiet wooded lot near the western fence line, great for longer stays." },
+  { "id": 703, "name": "#703", "row": 700, "status": "available", "lat": 30.13015059551235, "lon": -95.73240474325027, "description": "Shaded pine-canopy site with extra separation between neighbors." },
+  { "id": 704, "name": "#704", "row": 700, "status": "available", "lat": 30.13007774463884, "lon": -95.73241589602753, "description": "Peaceful west-side lot with mature trees and a level paved pad." },
+  { "id": 705, "name": "#705", "row": 700, "status": "available", "lat": 30.12983867474475, "lon": -95.73233898730157, "description": "Mid-row site with dense pine shade — cooler on hot summer afternoons." },
+  { "id": 706, "name": "#706", "row": 700, "status": "available", "lat": 30.12972231595847, "lon": -95.7323597930225, "description": "Well-shaded lot on the quiet west side of the park." },
+  { "id": 707, "name": "#707", "row": 700, "status": "available", "lat": 30.12963706693965, "lon": -95.73235512307055, "description": "Spacious 700-row site tucked beneath tall pines with full hookups." },
+  { "id": 708, "name": "#708", "row": 700, "status": "available", "lat": 30.1294771644178, "lon": -95.73233117163404, "description": "Tucked beneath the pines with excellent privacy and a level gravel pad." },
+  { "id": 709, "name": "#709", "row": 700, "status": "available", "lat": 30.12932454605507, "lon": -95.73239892209656, "description": "One of the most secluded spots in the park — ideal for nature lovers." },
+  { "id": 710, "name": "#710", "row": 700, "status": "available", "lat": 30.12921465456173, "lon": -95.73238970017626, "description": "Shaded mid-row site with a large gravel apron and solid level pad." },
+  { "id": 711, "name": "#711", "row": 700, "status": "available", "lat": 30.12903626155807, "lon": -95.73238318083668, "description": "End-of-row site on the west side — private, shaded, and peaceful." },
+
+  { "id": 601, "name": "#601", "row": 600, "status": "available", "lat": 30.13024740687383, "lon": -95.7320183254144, "description": "North end of the 600 row — easy pull-in with great overhead shade trees." },
+  { "id": 602, "name": "#602", "row": 600, "status": "available", "lat": 30.13009309602644, "lon": -95.73195909985115, "description": "Quiet wooded lot set away from the main traffic loop." },
+  { "id": 603, "name": "#603", "row": 600, "status": "available", "lat": 30.13000973351314, "lon": -95.7319558028544, "description": "Well-positioned site with mature pines providing solid afternoon shade." },
+  { "id": 604, "name": "#604", "row": 600, "status": "available", "lat": 30.12990949336822, "lon": -95.73197012864374, "description": "Mid-600 row site with a large level pad and reliable full hookups." },
+  { "id": 605, "name": "#605", "row": 600, "status": "available", "lat": 30.12978992853213, "lon": -95.73194716536806, "description": "Shaded lot with good neighbor spacing and a paved access apron." },
+  { "id": 606, "name": "#606", "row": 600, "status": "available", "lat": 30.12945141134506, "lon": -95.73192321935785, "description": "Peaceful site near the south end of the 600 row with full hookups." },
+  { "id": 607, "name": "#607", "row": 600, "status": "available", "lat": 30.12930311889136, "lon": -95.73191513869266, "description": "End-area lot with tall pines on two sides for extra shade and seclusion." },
+  { "id": 608, "name": "#608", "row": 600, "status": "available", "lat": 30.12919692733326, "lon": -95.73195149488008, "description": "Quiet south-end site with full hookups and pine-canopy shade overhead." },
+  { "id": 609, "name": "#609", "row": 600, "status": "available", "lat": 30.12910062938889, "lon": -95.73195657329416, "description": "Last site on the 600 row — one open side for added privacy and airflow." },
+
+  { "id": 501, "name": "#501", "row": 500, "status": "available", "lat": 30.13087083189305, "lon": -95.7315288602564, "description": "Top-of-row site on the large 500 row — convenient central park location." },
+  { "id": 502, "name": "#502", "row": 500, "status": "available", "lat": 30.13078489337427, "lon": -95.73157449631002, "description": "Well-positioned lot with easy access from the main park road." },
+  { "id": 503, "name": "#503", "row": 500, "status": "available", "lat": 30.13066225836889, "lon": -95.73163339947475, "description": "Mid-park site with good afternoon shade and a level concrete pad." },
+  { "id": 504, "name": "#504", "row": 500, "status": "available", "lat": 30.13056295696589, "lon": -95.73168222920758, "description": "Spacious 500-row lot with paved pad and reliable full hookups." },
+  { "id": 505, "name": "#505", "row": 500, "status": "available", "lat": 30.13048053017339, "lon": -95.73167903811932, "description": "Central park location — close to the laundry room and shower facilities." },
+  { "id": 506, "name": "#506", "row": 500, "status": "available", "lat": 30.13035101981582, "lon": -95.73169375186893, "description": "Level mid-row site with mature pines on the back edge for shade." },
+  { "id": 507, "name": "#507", "row": 500, "status": "available", "lat": 30.1302474009782, "lon": -95.73173827832557, "description": "Good-sized lot with full hookups and a pleasant shaded afternoon spot." },
+  { "id": 508, "name": "#508", "row": 500, "status": "available", "lat": 30.13019090355654, "lon": -95.73171432345605, "description": "Well-maintained 500-row site steps from the park's shared amenities." },
+  { "id": 509, "name": "#509", "row": 500, "status": "available", "lat": 30.13010788421651, "lon": -95.73168855379583, "description": "Level central site with easy access and room for slide-outs." },
+  { "id": 510, "name": "#510", "row": 500, "status": "available", "lat": 30.1299667851914, "lon": -95.7317623594068, "description": "Mid-row lot with overhead pine canopy — one of the best summer sites." },
+  { "id": 511, "name": "#511", "row": 500, "status": "available", "lat": 30.12994478909232, "lon": -95.73178086044956, "description": "Quiet interior site with full hookups and a solid level pad." },
+  { "id": 512, "name": "#512", "row": 500, "status": "available", "lat": 30.12985682850663, "lon": -95.73176347622632, "description": "Shaded 500-row site with good natural light in the morning hours." },
+  { "id": 513, "name": "#513", "row": 500, "status": "available", "lat": 30.12978647417184, "lon": -95.73174099270531, "description": "Well-spaced lot with mature trees on one side and a solid paved pad." },
+  { "id": 514, "name": "#514", "row": 500, "status": "available", "lat": 30.12969966554273, "lon": -95.73173763121503, "description": "Central park location — steps from the shower facilities." },
+  { "id": 515, "name": "#515", "row": 500, "status": "available", "lat": 30.12960043933692, "lon": -95.73171677434297, "description": "Level site with good natural airflow and pine shade in the afternoon." },
+  { "id": 516, "name": "#516", "row": 500, "status": "available", "lat": 30.1294711455165, "lon": -95.73176223459126, "description": "Spacious mid-row lot with ample room for large rigs and slide-outs." },
+  { "id": 517, "name": "#517", "row": 500, "status": "available", "lat": 30.12939046775636, "lon": -95.73174295959178, "description": "Quiet well-maintained site in the heart of the park." },
+  { "id": 518, "name": "#518", "row": 500, "status": "available", "lat": 30.12929885236219, "lon": -95.73174161551293, "description": "Level 500-row lot with full hookups and easy maneuvering room." },
+  { "id": 519, "name": "#519", "row": 500, "status": "available", "lat": 30.12920534713714, "lon": -95.73174220084182, "description": "Good-sized site near the south end of the 500 row with great shade." },
+  { "id": 520, "name": "#520", "row": 500, "status": "available", "lat": 30.12910964741162, "lon": -95.73176070530936, "description": "South-end 500 site with a wide entry and a shaded concrete pad." },
+  { "id": 521, "name": "#521", "row": 500, "status": "available", "lat": 30.12903806953493, "lon": -95.73173193260656, "description": "End-of-row site on the 500 row — extra open space on one side." },
+
+  { "id": 401, "name": "#401", "row": 400, "status": "available", "lat": 30.13083075634947, "lon": -95.7311441993176, "description": "Top of the 400 row with a wide entrance and a level concrete pad." },
+  { "id": 402, "name": "#402", "row": 400, "status": "available", "lat": 30.13073484303698, "lon": -95.73115257324295, "description": "Quiet interior lot with mature pines and reliable hookup access." },
+  { "id": 403, "name": "#403", "row": 400, "status": "available", "lat": 30.13064893166688, "lon": -95.73112469035483, "description": "Well-maintained site with steady electric service and a shaded pad." },
+  { "id": 404, "name": "#404", "row": 400, "status": "available", "lat": 30.13056589385062, "lon": -95.7311499556381, "description": "Mid-row 400 site with a large apron and easy slide-out clearance." },
+  { "id": 405, "name": "#405", "row": 400, "status": "available", "lat": 30.13053744522022, "lon": -95.73116981995767, "description": "Level paved site with reliable 50A service and good WiFi signal." },
+  { "id": 406, "name": "#406", "row": 400, "status": "available", "lat": 30.13045299323557, "lon": -95.73114560540195, "description": "Shaded 400-row lot with a level pad and a concrete entry apron." },
+  { "id": 407, "name": "#407", "row": 400, "status": "available", "lat": 30.13039341402754, "lon": -95.73113680380308, "description": "Central site with a short walk to the park's shared amenities." },
+  { "id": 408, "name": "#408", "row": 400, "status": "available", "lat": 30.13030800886379, "lon": -95.73113971667499, "description": "Quiet residential-feel lot with tall pines along the back edge." },
+  { "id": 409, "name": "#409", "row": 400, "status": "available", "lat": 30.1302159587997, "lon": -95.73113456047348, "description": "Level site with good maneuvering room and clean full hookup access." },
+  { "id": 410, "name": "#410", "row": 400, "status": "available", "lat": 30.13011256293919, "lon": -95.73111279380589, "description": "Mid-400 row site with pleasant pine shade in the afternoon." },
+  { "id": 411, "name": "#411", "row": 400, "status": "available", "lat": 30.1300261068368, "lon": -95.73111258903553, "description": "Well-spaced lot with a solid paved pad and clean utility connections." },
+  { "id": 412, "name": "#412", "row": 400, "status": "available", "lat": 30.12996975343952, "lon": -95.73112456805644, "description": "Quiet interior site — popular choice for extended monthly stays." },
+  { "id": 413, "name": "#413", "row": 400, "status": "available", "lat": 30.12989950188347, "lon": -95.73111749052836, "description": "Level site with overhead shade trees and easy park road access." },
+  { "id": 414, "name": "#414", "row": 400, "status": "available", "lat": 30.12985114585121, "lon": -95.73112323503211, "description": "South-end 400 site with extra elbow room and reliable full hookups." },
+  { "id": 415, "name": "#415", "row": 400, "status": "available", "lat": 30.12981559896023, "lon": -95.73110687226846, "description": "End-of-row lot with pine trees on two sides — peaceful and private." },
+
+  { "id": 301, "name": "#301", "row": 300, "status": "available", "lat": 30.13086788341704, "lon": -95.73083287092274, "description": "Top of the 300 row — wide entry directly off the main park loop." },
+  { "id": 302, "name": "#302", "row": 300, "status": "available", "lat": 30.13076932698164, "lon": -95.73083058565524, "description": "Quiet 300-row site with a level pad and reliable full hookup access." },
+  { "id": 303, "name": "#303", "row": 300, "status": "available", "lat": 30.13067747365173, "lon": -95.73084964427832, "description": "Mid-row site with a mature pine on the back edge for afternoon shade." },
+  { "id": 304, "name": "#304", "row": 300, "status": "available", "lat": 30.13058872690455, "lon": -95.73085235564153, "description": "Level paved lot with generous maneuvering clearance on entry." },
+  { "id": 305, "name": "#305", "row": 300, "status": "available", "lat": 30.13052539852741, "lon": -95.73084861479094, "description": "Interior 300 site with reliable full hookups and strong WiFi coverage." },
+  { "id": 306, "name": "#306", "row": 300, "status": "available", "lat": 30.13044705887008, "lon": -95.7308659069602, "description": "Central 300-row lot with pine canopy and solid hookup connections." },
+  { "id": 307, "name": "#307", "row": 300, "status": "available", "lat": 30.13034113973926, "lon": -95.73084947677361, "description": "Well-maintained site with a level concrete pad and clean utilities." },
+  { "id": 308, "name": "#308", "row": 300, "status": "available", "lat": 30.13025334324362, "lon": -95.73083849241871, "description": "Peaceful mid-row site with comfortable spacing from neighbors." },
+  { "id": 309, "name": "#309", "row": 300, "status": "available", "lat": 30.13016996210562, "lon": -95.7308362571752, "description": "Level site with pleasant afternoon shade from the surrounding pines." },
+  { "id": 310, "name": "#310", "row": 300, "status": "available", "lat": 30.13008177304215, "lon": -95.73084602874899, "description": "Interior lot — close walk to the shower and laundry facilities." },
+  { "id": 311, "name": "#311", "row": 300, "status": "available", "lat": 30.13002239590378, "lon": -95.73083156450478, "description": "Quiet 300-row site with pine shade and a solid level concrete pad." },
+  { "id": 312, "name": "#312", "row": 300, "status": "available", "lat": 30.12993413272428, "lon": -95.73082411479673, "description": "Near the south end of the row with extra open space around the site." },
+  { "id": 313, "name": "#313", "row": 300, "status": "available", "lat": 30.12985599797149, "lon": -95.73084398002787, "description": "End-of-row site with pines on one side — added privacy and shade." },
+
+  { "id": 201, "name": "#201", "row": 200, "status": "available", "lat": 30.13082524985898, "lon": -95.73067513121069, "description": "First site on the 200 row — wide entry and a level paved pad." },
+  { "id": 202, "name": "#202", "row": 200, "status": "available", "lat": 30.13074310144821, "lon": -95.73067278792176, "description": "Quiet 200-row lot with mature pines overhead and reliable hookups." },
+  { "id": 203, "name": "#203", "row": 200, "status": "available", "lat": 30.13066488024651, "lon": -95.73068586998009, "description": "Well-positioned mid-row site with a shaded paved pad." },
+  { "id": 204, "name": "#204", "row": 200, "status": "available", "lat": 30.1305752099644, "lon": -95.73065654854909, "description": "Level site with a good pull-in entry and full hookup access." },
+  { "id": 205, "name": "#205", "row": 200, "status": "available", "lat": 30.13048769641667, "lon": -95.73064513555731, "description": "Interior 200-row site with steady utilities and pleasant pine shade." },
+  { "id": 206, "name": "#206", "row": 200, "status": "available", "lat": 30.13038942751754, "lon": -95.73064094678178, "description": "Shaded mid-row lot — a popular choice for its cool summer afternoons." },
+  { "id": 207, "name": "#207", "row": 200, "status": "available", "lat": 30.1303136988867, "lon": -95.73064724339103, "description": "Level 200-row site with full hookups and a paved entry apron." },
+  { "id": 208, "name": "#208", "row": 200, "status": "available", "lat": 30.13024396118542, "lon": -95.73064675888348, "description": "Close to the shower facilities — a convenient pick for longer stays." },
+  { "id": 209, "name": "#209", "row": 200, "status": "available", "lat": 30.1301468470722, "lon": -95.7306356875111, "description": "Peaceful 200-row lot with comfortable spacing between neighbors." },
+  { "id": 210, "name": "#210", "row": 200, "status": "available", "lat": 30.13006473220446, "lon": -95.73065432819713, "description": "Well-maintained site with a full pine canopy overhead." },
+  { "id": 211, "name": "#211", "row": 200, "status": "available", "lat": 30.12997242046857, "lon": -95.73065813760613, "description": "Near the end of the row with extra elbow room and full hookups." },
+  { "id": 212, "name": "#212", "row": 200, "status": "available", "lat": 30.1298129557603, "lon": -95.7306821202135, "description": "End-of-row site — one open neighbor side for added privacy and airflow." },
+
+  { "id": 101, "name": "#101", "row": 100, "status": "available", "lat": 30.13080709363278, "lon": -95.73039283287437, "description": "Corner site nearest the park office — easy check-in and quick staff access." },
+  { "id": 102, "name": "#102", "row": 100, "status": "available", "lat": 30.13071853771999, "lon": -95.73041387104888, "description": "Front-row lot with clear sightlines and a level paved pad." },
+  { "id": 103, "name": "#103", "row": 100, "status": "available", "lat": 30.13063474976362, "lon": -95.73041253471501, "description": "Steps from the park office — quick access to staff during office hours." },
+  { "id": 104, "name": "#104", "row": 100, "status": "available", "lat": 30.13055695272224, "lon": -95.73041234679242, "description": "Sunny front-row site with good morning light and a solid level pad." },
+  { "id": 105, "name": "#105", "row": 100, "status": "available", "lat": 30.13046209103955, "lon": -95.7304004898364, "description": "Mid-row 100 site with a mature pine providing afternoon shade." },
+  { "id": 106, "name": "#106", "row": 100, "status": "available", "lat": 30.13037731959998, "lon": -95.73038383978451, "description": "Quiet front-row lot with full hookups and a paved access apron." },
+  { "id": 107, "name": "#107", "row": 100, "status": "available", "lat": 30.1302812273051, "lon": -95.73040031624046, "description": "Convenient site near the main park walkway and office building." },
+  { "id": 108, "name": "#108", "row": 100, "status": "available", "lat": 30.1301982559326, "lon": -95.73038125575971, "description": "Level lot with a shade tree nearby and comfortable slide-out clearance." },
+  { "id": 109, "name": "#109", "row": 100, "status": "available", "lat": 30.13012424799874, "lon": -95.73040263563456, "description": "Peaceful mid-row site with good spacing on both sides." },
+  { "id": 110, "name": "#110", "row": 100, "status": "available", "lat": 30.13000655284992, "lon": -95.73037598664837, "description": "Steps from the laundry room — ideal for weekly and monthly residents." },
+  { "id": 111, "name": "#111", "row": 100, "status": "available", "lat": 30.12986342425893, "lon": -95.73035171842677, "description": "End-of-row site on the 100 row — extra privacy with no right-side neighbor." }
 ]

@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import "leaflet/dist/leaflet.css";
 import sitesData from "@/data/park-sites.json";
 
-type Site = { id: number; name: string; row: number; status: string; lat: number; lon: number };
+type Site = { id: number; name: string; row: number; status: string; lat: number; lon: number; description?: string };
 const sites = sitesData as Site[];
 
 const ROWS = [100, 200, 300, 400, 500, 600, 700] as const;
@@ -75,7 +75,13 @@ export default function ParkMap() {
           iconSize: [28, 28],
           iconAnchor: [14, 14],
         });
-        const m = L.marker([s.lat, s.lon], { icon }).bindPopup(`<strong>Site ${label}</strong>`);
+        const popup = `
+          <div style="min-width:200px;font-family:ui-sans-serif,system-ui,sans-serif;line-height:1.4">
+            <div style="font-weight:700;font-size:14px;color:#1b4332;margin-bottom:2px">Site ${label}</div>
+            <div style="font-size:11px;color:#6b7280;margin-bottom:6px">Row ${s.row} · ${s.status}</div>
+            ${s.description ? `<div style="font-size:12px;color:#374151">${s.description}</div>` : ""}
+          </div>`;
+        const m = L.marker([s.lat, s.lon], { icon }).bindPopup(popup, { maxWidth: 240 });
         layer.addLayer(m);
       });
   }, [active, ready]);
