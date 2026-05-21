@@ -119,7 +119,7 @@ export default function ParkMap() {
         <button
           onClick={setAll}
           className={`rounded-md px-3 py-1.5 text-sm font-display transition ${
-            allOn ? "bg-[#1b4332] text-white" : "bg-muted text-foreground hover:bg-muted/70"
+            allOn ? "bg-primary-deep text-primary-foreground" : "bg-muted text-foreground hover:bg-muted/70"
           }`}
         >
           All
@@ -131,13 +131,14 @@ export default function ParkMap() {
               key={row}
               onClick={() => toggle(row)}
               className={`rounded-md px-3 py-1.5 text-sm font-display transition ${
-                on ? "bg-[#1b4332] text-white" : "bg-muted text-foreground hover:bg-muted/70"
+                on ? "bg-primary-deep text-primary-foreground" : "bg-muted text-foreground hover:bg-muted/70"
               }`}
               aria-pressed={on}
             >
               {row}s <span className="opacity-70">({counts[row] ?? 0})</span>
             </button>
           );
+        })}
         })}
       </div>
       <div ref={containerRef} className="h-[560px] w-full" />
