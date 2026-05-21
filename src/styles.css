@@ -89,7 +89,6 @@
   --input: oklch(1 0 0 / 15%);
   --ring: oklch(0.65 0.14 55);
 }
-}
 
 @layer base {
   * {
