@@ -30,7 +30,6 @@ export function SiteFooter() {
           <div className="font-display text-sm tracking-[0.3em] mb-3">STAY CONNECTED</div>
           <p className="text-sm opacity-90">Follow us for park updates, events & special offers!</p>
           <div className="flex gap-3 mt-3">
-          <div className="flex gap-3 mt-3">
             <a href="#" aria-label="Facebook" className="rounded-full bg-cream/10 p-2.5 ring-1 ring-cream/20 transition-all duration-300 hover:bg-accent hover:text-primary-deep hover:scale-110 hover:ring-accent"><Facebook className="h-5 w-5" /></a>
             <a href="#" aria-label="Instagram" className="rounded-full bg-cream/10 p-2.5 ring-1 ring-cream/20 transition-all duration-300 hover:bg-accent hover:text-primary-deep hover:scale-110 hover:ring-accent"><Instagram className="h-5 w-5" /></a>
           </div>
