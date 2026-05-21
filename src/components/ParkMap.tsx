@@ -77,7 +77,7 @@ export default function ParkMap() {
         });
         const popup = `
           <div style="min-width:200px;font-family:ui-sans-serif,system-ui,sans-serif;line-height:1.4">
-            <div style="font-weight:700;font-size:14px;color:#1b4332;margin-bottom:2px">Site ${label}</div>
+            <div style="font-weight:700;font-size:14px;color:#5c2018;margin-bottom:2px">Site ${label}</div>
             <div style="font-size:11px;color:#6b7280;margin-bottom:6px">Row ${s.row} · ${s.status}</div>
             ${s.description ? `<div style="font-size:12px;color:#374151">${s.description}</div>` : ""}
           </div>`;
@@ -119,7 +119,7 @@ export default function ParkMap() {
         <button
           onClick={setAll}
           className={`rounded-md px-3 py-1.5 text-sm font-display transition ${
-            allOn ? "bg-[#1b4332] text-white" : "bg-muted text-foreground hover:bg-muted/70"
+            allOn ? "bg-primary-deep text-primary-foreground" : "bg-muted text-foreground hover:bg-muted/70"
           }`}
         >
           All
@@ -131,7 +131,7 @@ export default function ParkMap() {
               key={row}
               onClick={() => toggle(row)}
               className={`rounded-md px-3 py-1.5 text-sm font-display transition ${
-                on ? "bg-[#1b4332] text-white" : "bg-muted text-foreground hover:bg-muted/70"
+                on ? "bg-primary-deep text-primary-foreground" : "bg-muted text-foreground hover:bg-muted/70"
               }`}
               aria-pressed={on}
             >
