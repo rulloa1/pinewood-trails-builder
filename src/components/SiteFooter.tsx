@@ -2,8 +2,9 @@ import { Facebook, Instagram, MapPin, Phone, Clock } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 
 export function SiteFooter() {
+export function SiteFooter() {
   return (
-    <footer className="bg-primary-deep text-primary-foreground">
+    <footer className="bg-primary-deep text-cream border-t-4 border-accent">
       <div className="mx-auto max-w-[1400px] grid gap-10 px-6 py-12 md:grid-cols-4 md:px-10">
         <div>
           <div className="font-display text-2xl font-bold tracking-wide">PINEWOOD TRAILS</div>
