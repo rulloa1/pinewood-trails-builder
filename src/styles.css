@@ -39,8 +39,6 @@
 
 :root {
   --radius: 0.5rem;
-:root {
-  --radius: 0.5rem;
   /* Warm cream paper */
   --background: oklch(0.972 0.018 75);
   --cream: oklch(0.972 0.018 75);
