@@ -60,7 +60,6 @@ export function BookingWidget({ variant = "hero" }: { variant?: "hero" | "compac
     </div>
   );
 }
-}
 
 function Field({
   icon, label, value, onChange, type = "text",
