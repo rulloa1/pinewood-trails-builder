@@ -139,7 +139,6 @@ export default function ParkMap() {
             </button>
           );
         })}
-        })}
       </div>
       <div ref={containerRef} className="h-[560px] w-full" />
     </>
