@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Home } from "lucide-react";
-import heroBg from "@/assets/page-hero-pines.jpg";
+import heroBg from "@/assets/hero-sunset.png";
 
 export function PageHero({
   title,

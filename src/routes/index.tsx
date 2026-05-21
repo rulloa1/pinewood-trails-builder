@@ -4,7 +4,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { BookingWidget } from "@/components/BookingWidget";
 import { SectionTitle } from "@/components/SectionTitle";
 import { Calendar, Clock, Phone, Plug, Zap, WashingMachine, Wifi, ShowerHead, Gamepad2, Heart, MapPin } from "lucide-react";
-import heroImg from "@/assets/hero-rv-park.jpg";
+import heroImg from "@/assets/hero-sunset.png";
 import mapImg from "@/assets/park-map.jpg";
 import sitePT from "@/assets/site-pull-through.jpg";
 import siteBI from "@/assets/site-back-in.jpg";
