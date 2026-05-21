@@ -35,7 +35,7 @@ export function BookingWidget({ variant = "hero" }: { variant?: "hero" | "compac
   }
 
   return (
-    <div className="w-full max-w-md rounded-xl bg-primary-deep/95 p-7 text-cream shadow-2xl ring-1 ring-cream/10 backdrop-blur">
+    <div className="w-full max-w-md rounded-3xl bg-primary-deep/40 p-7 text-cream shadow-2xl ring-1 ring-accent/40 border border-accent/30 backdrop-blur-2xl">
       <div className="flex items-center justify-center gap-2">
         <span>🌲</span>
         <h3 className="font-display text-2xl font-bold tracking-wider">BOOK YOUR STAY</h3>
@@ -53,12 +53,13 @@ export function BookingWidget({ variant = "hero" }: { variant?: "hero" | "compac
           onChange={(v) => setForm({ ...form, guests: v })} />
         <Field icon={<Truck />} label="RV Length" value={form.length}
           onChange={(v) => setForm({ ...form, length: v })} />
-        <button className="mt-2 rounded-md bg-primary px-5 py-3.5 font-display text-lg text-primary-foreground shadow ring-1 ring-cream/15 hover:bg-primary/90">
+        <button className="mt-2 rounded-xl bg-accent px-5 py-3.5 font-display text-lg font-semibold text-accent-foreground shadow-lg ring-1 ring-cream/15 transition-all duration-300 hover:bg-accent/90 hover:shadow-xl hover:-translate-y-0.5">
           Search Availability
         </button>
       </form>
     </div>
   );
+}
 }
 
 function Field({
