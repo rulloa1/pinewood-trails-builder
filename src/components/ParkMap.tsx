@@ -77,7 +77,7 @@ export default function ParkMap() {
         });
         const popup = `
           <div style="min-width:200px;font-family:ui-sans-serif,system-ui,sans-serif;line-height:1.4">
-            <div style="font-weight:700;font-size:14px;color:#1b4332;margin-bottom:2px">Site ${label}</div>
+            <div style="font-weight:700;font-size:14px;color:#5c2018;margin-bottom:2px">Site ${label}</div>
             <div style="font-size:11px;color:#6b7280;margin-bottom:6px">Row ${s.row} · ${s.status}</div>
             ${s.description ? `<div style="font-size:12px;color:#374151">${s.description}</div>` : ""}
           </div>`;
