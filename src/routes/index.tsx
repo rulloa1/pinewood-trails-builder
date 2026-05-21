@@ -222,9 +222,9 @@ function HomePage() {
 function InfoItem({ icon, title, text }: { icon: React.ReactNode; title: string; text: string }) {
   return (
     <div className="flex items-center gap-3">
-      <span className="rounded-full bg-primary p-3 text-primary-foreground [&>svg]:h-5 [&>svg]:w-5">{icon}</span>
+      <span className="rounded-full bg-accent p-3 text-accent-foreground shadow-md transition-transform duration-300 hover:scale-110 [&>svg]:h-5 [&>svg]:w-5">{icon}</span>
       <div>
-        <div className="font-display text-foreground">{title}</div>
+        <div className="font-display font-semibold text-primary-deep">{title}</div>
         <div className="text-sm text-muted-foreground">{text}</div>
       </div>
     </div>
