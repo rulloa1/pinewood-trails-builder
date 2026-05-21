@@ -43,7 +43,17 @@ function HomePage() {
       {/* HERO */}
       <section className="relative">
         <div className="relative h-[560px] md:h-[640px] overflow-hidden">
-          <img src={heroImg} alt="Pinewood Trails RV Park" className="absolute inset-0 h-full w-full object-cover" />
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            poster={heroImg}
+            className="absolute inset-0 h-full w-full object-cover"
+          >
+            <source src="/hero-video.mp4" type="video/mp4" />
+            <img src={heroImg} alt="Pinewood Trails RV Park" className="absolute inset-0 h-full w-full object-cover" />
+          </video>
           <div className="absolute inset-0 bg-gradient-to-r from-primary-deep/40 via-primary-deep/10 to-transparent" />
           <div className="relative mx-auto grid h-full max-w-[1400px] grid-cols-1 items-center gap-8 px-6 md:grid-cols-2 md:px-10">
             <div className="order-2 md:order-1">
