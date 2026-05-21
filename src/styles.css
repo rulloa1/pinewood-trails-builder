@@ -39,8 +39,6 @@
 
 :root {
   --radius: 0.5rem;
-:root {
-  --radius: 0.5rem;
   /* Warm cream paper */
   --background: oklch(0.972 0.018 75);
   --cream: oklch(0.972 0.018 75);
@@ -91,13 +89,15 @@
   --input: oklch(1 0 0 / 15%);
   --ring: oklch(0.65 0.14 55);
 }
-}
 
 @layer base {
   * {
     border-color: var(--color-border);
   }
-  html { font-family: var(--font-sans); }
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
@@ -106,4 +106,34 @@
   h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: -0.01em; }
   .font-script { font-family: var(--font-script); }
   .font-display { font-family: var(--font-display); }
+}
+
+@layer utilities {
+  @keyframes fade-in-up {
+    from { opacity: 0; transform: translateY(28px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes bounce-down {
+    0%, 100% { transform: translateY(0); opacity: 0.85; }
+    50%      { transform: translateY(10px); opacity: 1; }
+  }
+
+  /* Scroll-driven reveal on supporting browsers, instant otherwise */
+  .reveal { opacity: 1; }
+  @supports (animation-timeline: view()) {
+    .reveal {
+      animation: fade-in-up linear both;
+      animation-timeline: view();
+      animation-range: entry 0% cover 25%;
+    }
+  }
+
+  .animate-bounce-down { animation: bounce-down 1.6s ease-in-out infinite; }
+
+  .section-heading {
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    font-weight: 700;
+  }
 }

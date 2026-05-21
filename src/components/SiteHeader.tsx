@@ -1,6 +1,6 @@
 import { Link, useLocation } from "@tanstack/react-router";
 import { Calendar, Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -14,9 +14,23 @@ const nav = [
 export function SiteHeader() {
   const { pathname } = useLocation();
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 12);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <header className="relative z-30 bg-cream/95 backdrop-blur">
+    <header
+      className={`sticky top-0 z-30 transition-all duration-300 ${
+        scrolled
+          ? "bg-cream/85 backdrop-blur-md shadow-[0_2px_18px_-6px_rgba(92,32,24,0.25)] border-b border-accent/30"
+          : "bg-cream/95 backdrop-blur"
+      }`}
+    >
       <div className="mx-auto flex max-w-[1400px] items-center justify-between px-4 py-4 md:px-8 md:py-5">
         <Link to="/" className="flex items-center gap-3">
           <div className="flex items-end gap-1 text-primary">

@@ -22,7 +22,7 @@ export default function PinewoodTrailsMap() {
 
       <section className="mx-auto max-w-[1400px] px-6 py-12 md:px-10">
         <div className="grid gap-8 lg:grid-cols-[1fr_360px]">
-          <div className="overflow-hidden rounded-lg border border-border shadow-md bg-muted">
+          <div className="overflow-hidden rounded-3xl border-2 border-accent/40 ring-1 ring-primary-deep/10 shadow-xl bg-muted reveal">
             <Suspense fallback={<div className="flex h-[560px] items-center justify-center text-muted-foreground">Loading map…</div>}>
               <ParkMap />
             </Suspense>
