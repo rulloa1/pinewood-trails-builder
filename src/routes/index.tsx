@@ -55,19 +55,19 @@ function HomePage() {
             <img src={heroImg} alt="Pinewood Trails RV Park" className="absolute inset-0 h-full w-full object-cover" />
           </video>
           {/* Base wash */}
-          <div className="absolute inset-0 bg-gradient-to-r from-primary-deep/50 via-primary-deep/15 to-transparent" />
-          {/* Right-side dark gradient for text readability */}
-          <div className="absolute inset-y-0 right-0 w-full md:w-1/2 bg-gradient-to-l from-primary-deep/85 via-primary-deep/55 to-transparent" />
-          <div className="relative mx-auto grid h-full max-w-[1400px] grid-cols-1 items-center gap-8 px-6 md:grid-cols-2 md:px-10">
+          <div className="absolute inset-1 bg-gradient-to-r from-primary-deep/60 via-primary-deep/20 to-transparent" />
+          {/* Localized dark gradient behind text for readability */}
+          <div className="absolute inset-y-0 right-0 w-full md:w-[55%] bg-gradient-to-l from-primary-deep/90 via-primary-deep/65 to-transparent" />
+          <div className="relative mx-auto flex h-full max-w-[1400px] grid-cols-1 items-center gap-8 px-6 md:grid-cols-2 md:px-10">
             <div className="order-2 md:order-1 reveal">
               <BookingWidget />
             </div>
-            <div className="order-1 md:order-2 text-cream reveal">
-              <h1 className="font-display text-5xl md:text-7xl font-bold leading-[1.05] drop-shadow-lg">
+            <div className="order-1 md:order-2 flex flex-col items-center md:items-end text-cream reveal">
+              <h1 className="font-display text-5xl md:text-7xl font-bold leading-[1.05] drop-shadow-lg text-center md:text-right">
                 Relax. Explore.<br />
                 <span className="font-script text-6xl md:text-8xl font-medium text-accent drop-shadow-lg">Stay Awhile.</span>
               </h1>
-              <p className="mt-5 max-w-md text-lg text-cream drop-shadow-md">
+              <p className="mt-5 max-w-md text-lg text-cream drop-shadow-md text-center md:text-right">
                 92 sites tucked beneath the East Texas pines. Full hookups, 50A/30A service, and friendly staff ready to welcome you.
               </p>
               <Link to="/amenities" className="mt-6 inline-flex items-center gap-2 rounded-xl bg-accent px-6 py-3 font-display font-semibold text-accent-foreground shadow-lg transition-all duration-300 hover:bg-accent/90 hover:-translate-y-0.5 hover:shadow-xl">
