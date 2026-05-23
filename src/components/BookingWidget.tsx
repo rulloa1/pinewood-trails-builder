@@ -22,8 +22,14 @@ const getDefaultDates = () => {
   };
 };
 
-const isBeforeDate = (leftDate: string, rightDate: string) =>
+const isEarlierThan = (leftDate: string, rightDate: string) =>
   new Date(leftDate).getTime() < new Date(rightDate).getTime();
+
+const getNextDate = (date: string) => {
+  const nextDate = new Date(date);
+  nextDate.setDate(nextDate.getDate() + 1);
+  return formatDateInputValue(nextDate);
+};
 
 export function BookingWidget({ variant = "hero" }: { variant?: "hero" | "compact" }) {
   const navigate = useNavigate();
@@ -39,12 +45,17 @@ export function BookingWidget({ variant = "hero" }: { variant?: "hero" | "compac
   };
 
   const onCheckinChange = (checkin: string) => {
+    const minCheckoutDate = getNextDate(checkin);
     setForm((currentForm) => ({
       ...currentForm,
       checkin,
-      checkout: isBeforeDate(currentForm.checkout, checkin) ? checkin : currentForm.checkout,
+      checkout: isEarlierThan(currentForm.checkout, minCheckoutDate)
+        ? minCheckoutDate
+        : currentForm.checkout,
     }));
   };
+
+  const checkoutMinDate = getNextDate(form.checkin);
 
   if (variant === "compact") {
     return (
@@ -64,7 +75,7 @@ export function BookingWidget({ variant = "hero" }: { variant?: "hero" | "compac
           label="Check-out"
           type="date"
           value={form.checkout}
-          min={form.checkin}
+          min={checkoutMinDate}
           onChange={(checkout) => setForm({ ...form, checkout })}
         />
         <Field
@@ -110,7 +121,7 @@ export function BookingWidget({ variant = "hero" }: { variant?: "hero" | "compac
             label="Check-out"
             type="date"
             value={form.checkout}
-            min={form.checkin}
+            min={checkoutMinDate}
             onChange={(checkout) => setForm({ ...form, checkout })}
           />
         </div>
