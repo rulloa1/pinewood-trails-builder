@@ -22,6 +22,9 @@ const getDefaultDates = () => {
   };
 };
 
+const isBeforeDate = (leftDate: string, rightDate: string) =>
+  new Date(leftDate).getTime() < new Date(rightDate).getTime();
+
 export function BookingWidget({ variant = "hero" }: { variant?: "hero" | "compact" }) {
   const navigate = useNavigate();
   const [form, setForm] = useState(() => ({
@@ -39,7 +42,7 @@ export function BookingWidget({ variant = "hero" }: { variant?: "hero" | "compac
     setForm((currentForm) => ({
       ...currentForm,
       checkin,
-      checkout: currentForm.checkout < checkin ? checkin : currentForm.checkout,
+      checkout: isBeforeDate(currentForm.checkout, checkin) ? checkin : currentForm.checkout,
     }));
   };
 
