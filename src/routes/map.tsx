@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import PinewoodTrailsMap from "@/components/PinewoodTrailsMap";
+import ParkMap from "@/components/ParkMap";
 
 export const Route = createFileRoute("/map")({
   head: () => ({
@@ -12,5 +12,5 @@ export const Route = createFileRoute("/map")({
 });
 
 function MapPage() {
-  return <PinewoodTrailsMap />;
+  return <ParkMap />;
 }
