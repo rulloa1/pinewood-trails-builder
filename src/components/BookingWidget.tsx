@@ -41,7 +41,15 @@ export function BookingWidget({ variant = "hero" }: { variant?: "hero" | "compac
 
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
-    navigate({ to: "/book" });
+    navigate({
+      to: "/book",
+      search: {
+        checkin: form.checkin,
+        checkout: form.checkout,
+        guests: form.guests,
+        rvLength: form.length,
+      },
+    });
   };
 
   const onCheckinChange = (checkin: string) => {
