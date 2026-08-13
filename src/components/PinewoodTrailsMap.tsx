@@ -23,7 +23,13 @@ export default function PinewoodTrailsMap() {
       <section className="mx-auto max-w-[1400px] px-6 py-12 md:px-10">
         <div className="grid gap-8 lg:grid-cols-[1fr_360px]">
           <div className="overflow-hidden rounded-3xl border-2 border-accent/40 ring-1 ring-primary-deep/10 shadow-xl bg-muted reveal">
-            <Suspense fallback={<div className="flex h-[560px] items-center justify-center text-muted-foreground">Loading map…</div>}>
+            <Suspense
+              fallback={
+                <div className="flex h-[560px] items-center justify-center text-muted-foreground">
+                  Loading map…
+                </div>
+              }
+            >
               <ParkMap />
             </Suspense>
           </div>
@@ -56,7 +62,8 @@ export default function PinewoodTrailsMap() {
             <div className="rounded-lg border border-primary/20 bg-primary-deep p-6 text-cream shadow-sm">
               <div className="font-script text-2xl">Where folks love to live!</div>
               <p className="mt-2 text-sm opacity-90">
-                Minutes from local shopping, dining, and the natural beauty of the Sam Houston National Forest.
+                Minutes from local shopping, dining, and the natural beauty of the Sam Houston
+                National Forest.
               </p>
             </div>
           </aside>

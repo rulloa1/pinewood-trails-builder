@@ -16,8 +16,7 @@ function calcPricing(checkin: string, checkout: string) {
   const nights = Math.max(
     1,
     Math.round(
-      (new Date(checkout + "T12:00:00").getTime() -
-        new Date(checkin + "T12:00:00").getTime()) /
+      (new Date(checkout + "T12:00:00").getTime() - new Date(checkin + "T12:00:00").getTime()) /
         86_400_000,
     ),
   );
@@ -106,9 +105,7 @@ function BookPage() {
         },
       });
       setSubmitted(true);
-      toast.success(
-        "Reservation request sent! Check your inbox for confirmation.",
-      );
+      toast.success("Reservation request sent! Check your inbox for confirmation.");
     } catch {
       toast.error("Something went wrong. Please try again or call us directly.");
     } finally {
@@ -133,13 +130,10 @@ function BookPage() {
         {submitted ? (
           <div className="flex flex-col items-center justify-center rounded-xl border border-border bg-card p-10 shadow-sm text-center">
             <div className="text-6xl mb-4">🌲</div>
-            <h2 className="font-display text-2xl text-primary mb-2">
-              Request Received!
-            </h2>
+            <h2 className="font-display text-2xl text-primary mb-2">Request Received!</h2>
             <p className="text-muted-foreground max-w-sm">
-              We've sent a confirmation to{" "}
-              <strong>{guest.email}</strong>. We'll be in touch within 24 hours
-              to lock in your stay.
+              We've sent a confirmation to <strong>{guest.email}</strong>. We'll be in touch within
+              24 hours to lock in your stay.
             </p>
             <Link
               to="/sites"
@@ -149,13 +143,8 @@ function BookPage() {
             </Link>
           </div>
         ) : (
-          <form
-            onSubmit={submit}
-            className="rounded-xl border border-border bg-card p-6 shadow-sm"
-          >
-            <h2 className="font-display text-2xl text-primary">
-              Guest Information
-            </h2>
+          <form onSubmit={submit} className="rounded-xl border border-border bg-card p-6 shadow-sm">
+            <h2 className="font-display text-2xl text-primary">Guest Information</h2>
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
               <Field
                 label="Full Name *"
@@ -186,9 +175,7 @@ function BookPage() {
                 <textarea
                   rows={4}
                   value={guest.special}
-                  onChange={(e) =>
-                    setGuest({ ...guest, special: e.target.value })
-                  }
+                  onChange={(e) => setGuest({ ...guest, special: e.target.value })}
                   className="mt-1 w-full rounded-md border border-input bg-cream px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-ring"
                 />
               </label>
@@ -201,8 +188,8 @@ function BookPage() {
               {loading ? "Sending…" : "Complete Reservation"}
             </button>
             <div className="mt-3 flex items-center justify-center gap-1 text-xs text-muted-foreground">
-              <Check className="h-3.5 w-3.5 text-primary" /> Free Cancellation
-              up to 48 hours before check-in
+              <Check className="h-3.5 w-3.5 text-primary" /> Free Cancellation up to 48 hours before
+              check-in
             </div>
           </form>
         )}
@@ -266,19 +253,9 @@ function Field({
   );
 }
 
-function Row({
-  label,
-  value,
-  bold,
-}: {
-  label: string;
-  value: string;
-  bold?: boolean;
-}) {
+function Row({ label, value, bold }: { label: string; value: string; bold?: boolean }) {
   return (
-    <div
-      className={`flex justify-between py-2 ${bold ? "text-base font-bold text-primary" : ""}`}
-    >
+    <div className={`flex justify-between py-2 ${bold ? "text-base font-bold text-primary" : ""}`}>
       <dt className="text-muted-foreground">{label}</dt>
       <dd>{value}</dd>
     </div>

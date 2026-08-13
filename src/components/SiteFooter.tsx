@@ -14,29 +14,57 @@ export function SiteFooter() {
         </div>
         <div>
           <div className="font-display text-sm tracking-[0.3em] mb-3">CONTACT US</div>
-          <div className="flex items-center gap-2 text-sm py-1"><Phone className="h-4 w-4" /> 832-521-3345</div>
-          <div className="flex items-center gap-2 text-sm py-1"><Phone className="h-4 w-4" /> 832-671-5999</div>
+          <div className="flex items-center gap-2 text-sm py-1">
+            <Phone className="h-4 w-4" /> 832-521-3345
+          </div>
+          <div className="flex items-center gap-2 text-sm py-1">
+            <Phone className="h-4 w-4" /> 832-671-5999
+          </div>
           <div className="flex items-center gap-2 text-sm py-1 mt-2">info@pinewoodtrailsrv.com</div>
         </div>
         <div>
           <div className="font-display text-sm tracking-[0.3em] mb-3">VISIT US</div>
           <div className="flex items-start gap-2 text-sm py-1">
             <MapPin className="h-4 w-4 mt-0.5" />
-            <span>19651 Pinewood Trails Dr.<br/>Magnolia, TX 77355</span>
+            <span>
+              19651 Pinewood Trails Dr.
+              <br />
+              Magnolia, TX 77355
+            </span>
           </div>
-          <div className="flex items-center gap-2 text-sm py-1 mt-2"><Clock className="h-4 w-4" /> 8AM – 5PM, 7 Days a Week</div>
+          <div className="flex items-center gap-2 text-sm py-1 mt-2">
+            <Clock className="h-4 w-4" /> 8AM – 5PM, 7 Days a Week
+          </div>
         </div>
         <div>
           <div className="font-display text-sm tracking-[0.3em] mb-3">STAY CONNECTED</div>
           <p className="text-sm opacity-90">Follow us for park updates, events & special offers!</p>
           <div className="flex gap-3 mt-3">
-            <a href="#" aria-label="Facebook" className="rounded-full bg-cream/10 p-2.5 ring-1 ring-cream/20 transition-all duration-300 hover:bg-accent hover:text-primary-deep hover:scale-110 hover:ring-accent"><Facebook className="h-5 w-5" /></a>
-            <a href="#" aria-label="Instagram" className="rounded-full bg-cream/10 p-2.5 ring-1 ring-cream/20 transition-all duration-300 hover:bg-accent hover:text-primary-deep hover:scale-110 hover:ring-accent"><Instagram className="h-5 w-5" /></a>
+            <a
+              href="#"
+              aria-label="Facebook"
+              className="rounded-full bg-cream/10 p-2.5 ring-1 ring-cream/20 transition-all duration-300 hover:bg-accent hover:text-primary-deep hover:scale-110 hover:ring-accent"
+            >
+              <Facebook className="h-5 w-5" />
+            </a>
+            <a
+              href="#"
+              aria-label="Instagram"
+              className="rounded-full bg-cream/10 p-2.5 ring-1 ring-cream/20 transition-all duration-300 hover:bg-accent hover:text-primary-deep hover:scale-110 hover:ring-accent"
+            >
+              <Instagram className="h-5 w-5" />
+            </a>
           </div>
           <div className="mt-4 flex gap-4 text-sm">
-            <Link to="/sites" className="underline-offset-4 hover:underline">Sites</Link>
-            <Link to="/amenities" className="underline-offset-4 hover:underline">Amenities</Link>
-            <Link to="/contact" className="underline-offset-4 hover:underline">Contact</Link>
+            <Link to="/sites" className="underline-offset-4 hover:underline">
+              Sites
+            </Link>
+            <Link to="/amenities" className="underline-offset-4 hover:underline">
+              Amenities
+            </Link>
+            <Link to="/contact" className="underline-offset-4 hover:underline">
+              Contact
+            </Link>
           </div>
         </div>
       </div>

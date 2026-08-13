@@ -37,7 +37,11 @@ export function SiteHeader() {
             <svg viewBox="0 0 24 32" className="h-10 w-7 md:h-12 md:w-9" fill="currentColor">
               <path d="M12 0 L4 12 L8 12 L2 22 L8 22 L0 32 L24 32 L16 22 L22 22 L16 12 L20 12 Z" />
             </svg>
-            <svg viewBox="0 0 24 32" className="h-8 w-6 md:h-10 md:w-7 opacity-80" fill="currentColor">
+            <svg
+              viewBox="0 0 24 32"
+              className="h-8 w-6 md:h-10 md:w-7 opacity-80"
+              fill="currentColor"
+            >
               <path d="M12 0 L4 12 L8 12 L2 22 L8 22 L0 32 L24 32 L16 22 L22 22 L16 12 L20 12 Z" />
             </svg>
           </div>

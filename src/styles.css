@@ -50,15 +50,15 @@
   --popover-foreground: oklch(0.24 0.05 35);
 
   /* Autumn Harvest: sienna primary, burgundy deep, amber gold */
-  --primary: oklch(0.52 0.14 45);          /* #9b4423 sienna */
+  --primary: oklch(0.52 0.14 45); /* #9b4423 sienna */
   --primary-foreground: oklch(0.975 0.018 75);
-  --primary-deep: oklch(0.36 0.13 35);     /* #5c2018 burgundy */
+  --primary-deep: oklch(0.36 0.13 35); /* #5c2018 burgundy */
 
   --secondary: oklch(0.93 0.04 80);
   --secondary-foreground: oklch(0.36 0.13 35);
   --muted: oklch(0.94 0.025 75);
   --muted-foreground: oklch(0.46 0.05 45);
-  --accent: oklch(0.78 0.14 75);           /* #d4842a amber */
+  --accent: oklch(0.78 0.14 75); /* #d4842a amber */
   --accent-foreground: oklch(0.24 0.05 35);
 
   --destructive: oklch(0.55 0.2 25);
@@ -103,23 +103,48 @@
     color: var(--color-foreground);
     font-family: var(--font-sans);
   }
-  h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: -0.01em; }
-  .font-script { font-family: var(--font-script); }
-  .font-display { font-family: var(--font-display); }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+  }
+  .font-script {
+    font-family: var(--font-script);
+  }
+  .font-display {
+    font-family: var(--font-display);
+  }
 }
 
 @layer utilities {
   @keyframes fade-in-up {
-    from { opacity: 0; transform: translateY(28px); }
-    to   { opacity: 1; transform: translateY(0); }
+    from {
+      opacity: 0;
+      transform: translateY(28px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   @keyframes bounce-down {
-    0%, 100% { transform: translateY(0); opacity: 0.85; }
-    50%      { transform: translateY(10px); opacity: 1; }
+    0%,
+    100% {
+      transform: translateY(0);
+      opacity: 0.85;
+    }
+    50% {
+      transform: translateY(10px);
+      opacity: 1;
+    }
   }
 
   /* Scroll-driven reveal on supporting browsers, instant otherwise */
-  .reveal { opacity: 1; }
+  .reveal {
+    opacity: 1;
+  }
   @supports (animation-timeline: view()) {
     .reveal {
       animation: fade-in-up linear both;
@@ -128,7 +153,9 @@
     }
   }
 
-  .animate-bounce-down { animation: bounce-down 1.6s ease-in-out infinite; }
+  .animate-bounce-down {
+    animation: bounce-down 1.6s ease-in-out infinite;
+  }
 
   .section-heading {
     font-family: var(--font-display);

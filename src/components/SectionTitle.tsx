@@ -1,4 +1,10 @@
-export function SectionTitle({ children, className = "" }: { children: React.ReactNode; className?: string }) {
+export function SectionTitle({
+  children,
+  className = "",
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) {
   return (
     <div className={`flex items-center justify-center gap-4 ${className}`}>
       <span className="text-accent text-lg">🌲</span>

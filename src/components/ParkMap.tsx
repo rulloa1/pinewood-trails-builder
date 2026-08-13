@@ -2,7 +2,15 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import "leaflet/dist/leaflet.css";
 import sitesData from "@/data/park-sites.json";
 
-type Site = { id: number; name: string; row: number; status: string; lat: number; lon: number; description?: string };
+type Site = {
+  id: number;
+  name: string;
+  row: number;
+  status: string;
+  lat: number;
+  lon: number;
+  description?: string;
+};
 const sites = sitesData as Site[];
 
 const ROWS = [100, 200, 300, 400, 500, 600, 700] as const;
@@ -36,12 +44,14 @@ export default function ParkMap() {
         [Math.max(...lats), Math.max(...lons)],
       ];
 
-      const map = L.map(containerRef.current, { scrollWheelZoom: false }).fitBounds(bounds, { padding: [30, 30] });
+      const map = L.map(containerRef.current, { scrollWheelZoom: false }).fitBounds(bounds, {
+        padding: [30, 30],
+      });
       mapRef.current = map;
 
       L.tileLayer(
         "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
-        { maxZoom: 21, attribution: "Tiles © Esri" }
+        { maxZoom: 21, attribution: "Tiles © Esri" },
       ).addTo(map);
 
       layerRef.current = L.layerGroup().addTo(map);
@@ -61,7 +71,10 @@ export default function ParkMap() {
   // Re-render markers when active rows change
   useEffect(() => {
     const L = LRef.current as typeof import("leaflet") | null;
-    const layer = layerRef.current as { clearLayers: () => void; addLayer: (l: unknown) => void } | null;
+    const layer = layerRef.current as {
+      clearLayers: () => void;
+      addLayer: (l: unknown) => void;
+    } | null;
     if (!L || !layer) return;
     layer.clearLayers();
 
@@ -119,7 +132,9 @@ export default function ParkMap() {
         <button
           onClick={setAll}
           className={`rounded-md px-3 py-1.5 text-sm font-display transition ${
-            allOn ? "bg-primary-deep text-primary-foreground" : "bg-muted text-foreground hover:bg-muted/70"
+            allOn
+              ? "bg-primary-deep text-primary-foreground"
+              : "bg-muted text-foreground hover:bg-muted/70"
           }`}
         >
           All
@@ -131,7 +146,9 @@ export default function ParkMap() {
               key={row}
               onClick={() => toggle(row)}
               className={`rounded-md px-3 py-1.5 text-sm font-display transition ${
-                on ? "bg-primary-deep text-primary-foreground" : "bg-muted text-foreground hover:bg-muted/70"
+                on
+                  ? "bg-primary-deep text-primary-foreground"
+                  : "bg-muted text-foreground hover:bg-muted/70"
               }`}
               aria-pressed={on}
             >

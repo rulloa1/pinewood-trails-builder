@@ -22,8 +22,7 @@ export type BookingData = z.infer<typeof BookingInput>;
 const PARK_EMAIL = "rory.ulloa@students.maestrocollege.edu";
 const PARK_NAME = "Pinewood Trails RV Park";
 // Use onboarding@resend.dev for testing; set RESEND_FROM_EMAIL in production
-const FROM_EMAIL = () =>
-  process.env.RESEND_FROM_EMAIL ?? "onboarding@resend.dev";
+const FROM_EMAIL = () => process.env.RESEND_FROM_EMAIL ?? "onboarding@resend.dev";
 
 const dateFmt = new Intl.DateTimeFormat("en-US", {
   month: "long",

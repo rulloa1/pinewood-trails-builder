@@ -74,21 +74,44 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Pinewood Trails RV Park — Magnolia, TX" },
-      { name: "description", content: "Peaceful RV park nestled in the pines of Magnolia, Texas. Full hookups, modern amenities, friendly service. Book your stay today." },
+      {
+        name: "description",
+        content:
+          "Peaceful RV park nestled in the pines of Magnolia, Texas. Full hookups, modern amenities, friendly service. Book your stay today.",
+      },
       { property: "og:title", content: "Pinewood Trails RV Park — Magnolia, TX" },
-      { property: "og:description", content: "Peaceful RV park nestled in the pines of Magnolia, Texas. Full hookups, modern amenities, friendly service. Book your stay today." },
+      {
+        property: "og:description",
+        content:
+          "Peaceful RV park nestled in the pines of Magnolia, Texas. Full hookups, modern amenities, friendly service. Book your stay today.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:title", content: "Pinewood Trails RV Park — Magnolia, TX" },
-      { name: "twitter:description", content: "Peaceful RV park nestled in the pines of Magnolia, Texas. Full hookups, modern amenities, friendly service. Book your stay today." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/24ece2a9-dbeb-4d33-8dcc-b6ad3d4d4a27/id-preview-e46179a4--19f0e798-2c60-405f-8367-a298461679cc.lovable.app-1779097470792.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/24ece2a9-dbeb-4d33-8dcc-b6ad3d4d4a27/id-preview-e46179a4--19f0e798-2c60-405f-8367-a298461679cc.lovable.app-1779097470792.png" },
+      {
+        name: "twitter:description",
+        content:
+          "Peaceful RV park nestled in the pines of Magnolia, Texas. Full hookups, modern amenities, friendly service. Book your stay today.",
+      },
+      {
+        property: "og:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/24ece2a9-dbeb-4d33-8dcc-b6ad3d4d4a27/id-preview-e46179a4--19f0e798-2c60-405f-8367-a298461679cc.lovable.app-1779097470792.png",
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/24ece2a9-dbeb-4d33-8dcc-b6ad3d4d4a27/id-preview-e46179a4--19f0e798-2c60-405f-8367-a298461679cc.lovable.app-1779097470792.png",
+      },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Nunito+Sans:wght@300;400;500;600;700;800&family=Dancing+Script:wght@500;700&display=swap" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Nunito+Sans:wght@300;400;500;600;700;800&family=Dancing+Script:wght@500;700&display=swap",
+      },
     ],
   }),
   shellComponent: RootShell,

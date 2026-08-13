@@ -14,7 +14,11 @@ export const Route = createFileRoute("/sites")({
   head: () => ({
     meta: [
       { title: "Sites & Rates — Pinewood Trails RV Park" },
-      { name: "description", content: "Browse our pull-through and back-in RV sites with full hookups, 30A and 50A service. Nightly, weekly, and monthly rates available." },
+      {
+        name: "description",
+        content:
+          "Browse our pull-through and back-in RV sites with full hookups, 30A and 50A service. Nightly, weekly, and monthly rates available.",
+      },
     ],
   }),
   component: SitesPage,
@@ -63,7 +67,11 @@ function SitesPage() {
   return (
     <div className="min-h-screen bg-cream">
       <SiteHeader />
-      <PageHero title="Sites & Rates" subtitle="92 spacious sites tucked beneath the pines." crumb="Sites & Rates" />
+      <PageHero
+        title="Sites & Rates"
+        subtitle="92 spacious sites tucked beneath the pines."
+        crumb="Sites & Rates"
+      />
 
       <section className="mx-auto max-w-[1400px] px-6 py-10 md:px-10">
         <BookingWidget variant="compact" />
@@ -71,7 +79,9 @@ function SitesPage() {
 
       <section className="mx-auto max-w-[1400px] px-6 pb-16 md:px-10">
         <SectionTitle>AVAILABLE SITES</SectionTitle>
-        <p className="mt-3 text-center text-muted-foreground">92 sites across 7 rows — featured selection shown below</p>
+        <p className="mt-3 text-center text-muted-foreground">
+          92 sites across 7 rows — featured selection shown below
+        </p>
         <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {sites.map((s) => (
             <button
@@ -80,8 +90,15 @@ function SitesPage() {
               className="overflow-hidden rounded-xl bg-card text-left shadow-md ring-1 ring-border transition hover:shadow-xl hover:ring-primary/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
             >
               <div className="relative">
-                <img src={s.img} alt={`Site ${s.num}`} className="h-48 w-full object-cover" loading="lazy" />
-                <span className="absolute left-3 top-3 rounded-md bg-primary px-2 py-1 text-sm font-bold text-primary-foreground">Site {s.num}</span>
+                <img
+                  src={s.img}
+                  alt={`Site ${s.num}`}
+                  className="h-48 w-full object-cover"
+                  loading="lazy"
+                />
+                <span className="absolute left-3 top-3 rounded-md bg-primary px-2 py-1 text-sm font-bold text-primary-foreground">
+                  Site {s.num}
+                </span>
                 {s.featured && (
                   <span className="absolute right-3 top-3 inline-flex items-center gap-1 rounded-md bg-gold px-2 py-1 text-xs font-bold text-primary-deep">
                     <Star className="h-3 w-3" /> Featured
@@ -92,7 +109,9 @@ function SitesPage() {
                 <div className="flex items-center justify-between">
                   <div>
                     <div className="font-display text-lg text-foreground">Site {s.num}</div>
-                    <div className="text-sm text-muted-foreground">{s.type} · {s.amp}</div>
+                    <div className="text-sm text-muted-foreground">
+                      {s.type} · {s.amp}
+                    </div>
                   </div>
                   <div className="text-right">
                     <div className="text-2xl font-bold text-primary">${s.price}</div>
@@ -124,9 +143,14 @@ function SitesPage() {
               { label: "Weekly", price: "$294", note: "7 nights — save 20%", icon: Waves },
               { label: "Monthly", price: "$650", note: "Plus metered electric", icon: Plug },
             ].map((r) => (
-              <div key={r.label} className="rounded-xl border border-border bg-cream p-6 text-center shadow-sm">
+              <div
+                key={r.label}
+                className="rounded-xl border border-border bg-cream p-6 text-center shadow-sm"
+              >
                 <r.icon className="mx-auto h-7 w-7 text-primary" />
-                <div className="mt-3 font-display text-2xl tracking-wider text-primary">{r.label}</div>
+                <div className="mt-3 font-display text-2xl tracking-wider text-primary">
+                  {r.label}
+                </div>
                 <div className="mt-2 text-4xl font-bold text-foreground">{r.price}</div>
                 <div className="mt-1 text-sm text-muted-foreground">{r.note}</div>
               </div>
@@ -161,7 +185,9 @@ function SiteDetail({ site, onClose }: { site: Site; onClose: () => void }) {
         <div className="absolute bottom-3 left-4 right-4 flex items-end justify-between">
           <div>
             <div className="font-display text-2xl font-bold text-white">Site {site.num}</div>
-            <div className="text-sm text-white/80">{site.type} · {site.amp} Service</div>
+            <div className="text-sm text-white/80">
+              {site.type} · {site.amp} Service
+            </div>
           </div>
           {site.featured && (
             <span className="inline-flex items-center gap-1 rounded-md bg-gold px-2 py-1 text-xs font-bold text-primary-deep">
@@ -175,7 +201,11 @@ function SiteDetail({ site, onClose }: { site: Site; onClose: () => void }) {
         {/* Pricing */}
         <div className="grid grid-cols-3 divide-x divide-border rounded-lg border border-border bg-card text-center">
           <PriceCell label="Nightly" value={`$${site.price}`} />
-          <PriceCell label="Weekly" value={`$${site.weekly}`} note={`Save $${Math.abs(nightlySavings)}`} />
+          <PriceCell
+            label="Weekly"
+            value={`$${site.weekly}`}
+            note={`Save $${Math.abs(nightlySavings)}`}
+          />
           <PriceCell label="Monthly" value={`$${site.monthly}`} note="+ metered elec." />
         </div>
 
@@ -248,7 +278,8 @@ function AmenityRow({ icon, label }: { icon: React.ReactNode; label: string }) {
 function Badge({ icon, children }: { icon: React.ReactNode; children: React.ReactNode }) {
   return (
     <span className="inline-flex items-center gap-1 rounded bg-muted px-2 py-0.5">
-      {icon}{children}
+      {icon}
+      {children}
     </span>
   );
 }
